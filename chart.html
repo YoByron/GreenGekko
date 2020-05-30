@@ -1,0 +1,280 @@
+<!--
+    This chart.html view uses the Highstock component from www.highcharts.com
+    The component is ONLY free of charge for non-profit/personal use.
+    For further details or for buying a commercial license, visit the vendor
+    website: https://shop.highsoft.com/highcharts/
+
+    http://jsfiddle.net/tvpcwLj9/
+-->
+
+<html>
+    <head>
+        <title>Green Gekko trading bot - chart view</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" type = "text/css" href = "https://cloud.think5.de/gekko/include/charting.css" />
+    </head>
+    <script src="https://cloud.think5.de/gekko/include/charting.js"></script>
+    <script src="https://cloud.think5.de/gekko/include/theme.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./mybacktest.js"></script>
+    
+    <body>
+    <div id="container" style="min-height: 900px; min-width: 310px; margin: 0 auto;"></div>
+
+    <script>
+        $(document).ready(function() {
+            // split the data set into ohlc and volume
+            var ohlc = [],
+                volume = [],
+                trades = [],
+                dataLength = data.chartCandles.length,
+                tradeLength = data.trades.length
+
+            for (let i=0; i < tradeLength; i += 1) {
+                let isBuy = data.trades[i].action === 'buy' ? true : false;
+                let txt = `
+                          Trade: ${data.trades[i].action.toUpperCase()} <br/><br/>
+                          Price: ${data.trades[i].price}
+                          `;
+                if (data.trades[i].origin !== undefined) txt += '<br/><br/>Origin: ' + data.trades[i].origin
+                trades.push({
+                    x: data.trades[i].date*1000, // the date
+                    title: isBuy ? 'B' : 'S',
+                    text: txt,
+                    color: isBuy ? 'green' : 'red',
+                    fillColor: isBuy ? 'green' : 'red',
+                    stackDistance: isBuy ? 50 : 25,
+                    minPointLength: isBuy ? 30 : 15
+                });
+            }
+
+            for (let i=0; i < dataLength; i += 1) {
+                var diff = data.chartCandles[i].close - data.chartCandles[i].open;
+                ohlc.push({
+                    x: data.chartCandles[i].start*1000, // the date
+                    open: data.chartCandles[i].open, // open
+                    high: data.chartCandles[i].high, // high
+                    low: data.chartCandles[i].low, // low
+                    close: data.chartCandles[i].close, // close
+                    color: diff > 0 ? 'green' : (diff === 0 ? 'green' : 'red'), // color
+                    lineColor: diff > 0 ? 'green' : (diff === 0 ? 'green' : 'red'),
+                });
+
+                volume.push({
+                    x: data.chartCandles[i].start*1000, // the date
+                    y: data.chartCandles[i].volume, // the volume
+                    color: '#434348'
+                });
+            }
+
+            var lastDate = data.chartCandles[data.chartCandles.length - 1].start*1000;
+
+
+            // create the chart
+            var myChart = {
+                navigator: {
+                    enabled:true,
+                    xAxis: {
+                        ordinal: false,
+                        min: data.chartCandles[0].start*1000,
+                    }
+                },
+
+                title: {
+                    text: data.market.asset + data.market.currency + ', ' + data.market.exchange + ' // ' + data.strategy + ' strategy'
+                },
+
+                yAxis: [{
+                    labels: {
+                        align: 'right',
+                        x: -3
+                    },
+                    title: {
+                        text: 'OHLC'
+                    },
+                    height: 300,
+                    lineWidth: 2,
+                    resize: {
+                        enabled: true
+                    }
+                }, {
+                    labels: {
+                        align: 'right',
+                        x: -3
+                    },
+                    title: {
+                        text: 'Volume'
+                    },
+                    height: 100,
+                    top: 400,
+                    offset: 0,
+                    lineWidth: 1
+                }
+                ],
+                
+
+                series: [{
+                    type: 'candlestick',
+                    name: data.market.asset + data.market.currency,
+                    id: 'main',
+                    data: ohlc,
+                    dataGrouping: {
+                        units: groupingUnits
+                    },
+                    yAxis: 0,
+                    lineWidth: 1,
+                    tooltip: {
+                        valueDecimals: 2
+                    },
+                    turboThreshold: 0,
+                    //compare: 'percent'
+                }, {
+                    type: 'flags',
+                    name: 'Flags on series',
+                    data: trades,
+                    width: 14,
+                    yAxis: 0,
+                    style: { // text style
+                        color: 'white'
+                    },
+                    states: {
+                        hover: {
+                            fillColor: '#395C84' // darker
+                        }
+                    },
+                    onSeries: 'main',
+                    shape: 'squarepin'
+                }, {
+                    type: 'column',
+                    name: 'Volume',
+                    data: volume,
+                    yAxis: 1,
+                    dataGrouping: {
+                        units: groupingUnits
+                    },
+                    tooltip: {
+                        valueDecimals: 2
+                    },
+                    turboThreshold: 0,
+                }]
+            }
+
+
+            function prepareYAxis(name, count) {
+                var yAxis = {
+                    labels: {
+                        align: 'right',
+                        x: -3
+                    },
+                    title: {
+                        text: name
+                    },
+                    height: 100,
+                    top: 400 + (120 * count),
+                    offset: 0,
+                    lineWidth: 1
+                }
+
+                return yAxis;
+            }
+
+
+            function addIndicators(indicators) {
+                var count = 1;
+
+                for (var ind in indicators) {
+                    //multiple value indicator
+                    if (Array.isArray(indicators[ind].data[0].value) === true) {
+                        count++;
+                        for (var j=0; j<indicators[ind].data[0].value.length; j++) {
+                            var data = [];
+                            for (var i=0; i<indicators[ind].data.length; i++) {
+                                let item = indicators[ind].data[i];
+                                data.push({
+                                    x: item.start*1000,
+                                    y: item.value[j].value
+                                });
+                            }
+                            
+                            let serie = {
+                                name: indicators[ind].data[0].value[j].name,
+                                type: 'line',
+                                yAxis: count,
+                                data: data,
+                                gapSize: 5,
+                                colorIndex: 5-j,
+                                tooltip: {
+                                    valueDecimals: 2
+                                },
+                                turboThreshold: 0,
+                                dataGrouping: {
+                                    units: groupingUnits
+                                },
+                                
+                                threshold: null
+                            };
+                            myChart.series.push(serie);
+                        }
+
+                        myChart.yAxis.push(prepareYAxis(indicators[ind].meta.name, count-1));
+                        let containerHeight = 800 + (125*(count-1)) + "px";
+                        $('#container').css({minHeight: 600 + (125*(count-1)) + "px"});
+                    }
+
+                    //single value indicator
+                    if (Array.isArray(indicators[ind].data[0].value) === false) {
+                        count++;
+                        let data = [];
+                        for (var i=0; i<indicators[ind].data.length; i++) {
+                            let item = indicators[ind].data[i];
+                            data.push({
+                                x: item.start*1000,
+                                y: item.value
+                            });
+                        }
+                        
+                        let serie = {
+                            name: ind,
+                            type: 'area',
+                            yAxis: count,
+                            data: data,
+                            gapSize: 5,
+                            tooltip: {
+                                valueDecimals: 2
+                            },
+                            turboThreshold: 0,
+                            dataGrouping: {
+                                units: groupingUnits
+                            },
+                            colorIndex: count-2,
+                            fillColor: {
+                                linearGradient: {
+                                    x1: 0,
+                                    y1: 0,
+                                    x2: 0,
+                                    y2: 1
+                                },
+                                stops: [
+                                    [0, Highcharts.getOptions().colors[count-2]],
+                                    [1, Highcharts.Color(Highcharts.getOptions().colors[count-2]).setOpacity(0).get('rgba')]
+                                ]
+                            },
+                            threshold: null
+                        };
+
+                        myChart.yAxis.push(prepareYAxis(indicators[ind].meta.name, count-1));
+                        myChart.series.push(serie);
+                        let containerHeight = 800 + (125*(count-1)) + "px";
+                        $('#container').css({minHeight: 600 + (125*(count-1)) + "px"});
+                    }
+                }
+            }
+
+
+            addIndicators(data.indicators);
+            var fullChart = Object.assign({}, myOptions, myChart);
+            window.chart = Highcharts.stockChart('container', fullChart);
+        });
+    </script>
+    </body>
+</html>

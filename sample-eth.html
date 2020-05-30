@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- This file was created with the aha Ansi HTML Adapter. https://github.com/theZiz/aha -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xml+xhtml; charset=UTF-8" />
+<title>Strategy with sample-eth.js config</title>
+</head>
+<body style="color:white; background-color:black">
+<pre>
+
+   <span style="color:lime;">~Gr€€n~</span><span style="color:white;">
+    ______   ________  __    __  __    __   ______
+   /      \ /        |/  |  /  |/  |  /  | /      \
+  /$$$$$$  |€€€€€€€€/ $$ | /$$/ $$ | /$$/ /$$$$$$  |
+  $$ | _$$/ €€ |__    $$ |/$$/  $$ |/$$/  $$ |  $$ |
+  $$ |/    |€€    |   $$  $$&lt;   $$  $$&lt;   $$ |  $$ |
+  $$ |$$$$ |€€€€€/    $$$$$  \  $$$$$  \  $$ |  $$ |            </span><span style="color:red;">___</span><span style="color:white;">      
+  $$ \__$$ |€€ |_____ $$ |$$  \ $$ |$$  \ $$ \__$$ |           </span><span style="color:red;">/_\ `*</span><span style="color:white;">     
+  $$    $$/ €€       |$$ | $$  |$$ | $$  |$$    $$/           </span><span style="color:lime;">(o o)</span><span style="color:white;">     
+   $$$$$$/  €€€€€€€€/ $$/   $$/ $$/   $$/  $$$$$$/       </span><span style="color:lime;">-ooO--(_)--Ooo-</span><span style="color:white;">
+
+</span><span style="color:red;">	Gekko v2020.0.68.282</span><span style="color:white;">
+	I'm gonna make you rich, Bud Fox. 
+
+
+2020-01-02 11:05:15 (INFO):	Setting up Gekko in realtime mode
+2020-01-02 11:05:15 (INFO):	
+2020-01-02 11:05:15 (INFO):	Setting up:
+2020-01-02 11:05:15 (INFO):		 Advice logger
+2020-01-02 11:05:15 (INFO):		 
+2020-01-02 11:05:15 (INFO):	Setting up:
+2020-01-02 11:05:15 (INFO):		 Paper Trader
+2020-01-02 11:05:15 (INFO):		 Paper trader that simulates fake trades.
+2020-01-02 11:05:15 (INFO):	
+
+2020-01-02 11:05:15 (INFO):	Setting up:
+2020-01-02 11:05:15 (INFO):		 Performance Analyzer
+2020-01-02 11:05:15 (INFO):		 Analyzes performances of trades
+2020-01-02 11:05:15 (INFO):	
+
+2020-01-02 11:05:15 (INFO):	Setting up:
+2020-01-02 11:05:15 (INFO):		 Candle writer
+2020-01-02 11:05:15 (INFO):		 Store candles in a database
+2020-01-02 11:05:15 (INFO):	
+
+2020-01-02 11:05:15 (INFO):	Setting up:
+2020-01-02 11:05:15 (INFO):		 Trading Advisor
+2020-01-02 11:05:15 (INFO):		 Calculate trading advice
+2020-01-02 11:05:15 (INFO):		 Using the strategy: T5mainasync
+2020-01-02 11:05:16 (INFO):		The trading method requests 7260 minutes of historic data. Checking availablity..
+2020-01-02 11:05:16 (INFO):	
+
+2020-01-02 11:05:16 (DEBUG):	Check database exists: kraken
+2020-01-02 11:05:16 (DEBUG):	DB version: PostgreSQL 12.1 on x86_64-pc-linux-gnu
+2020-01-02 11:05:16 (DEBUG):	Database exists: kraken
+2020-01-02 11:05:16 (DEBUG):	Postgres connection pool is ready, db kraken
+2020-01-02 11:05:16 (INFO):	DB candle consistency: No db data gap, but missing history (available from 2019-12-28T09:05:00Z to 2020-01-02T10:03:00Z)
+2020-01-02 11:05:16 (DEBUG):		Available local data:
+2020-01-02 11:05:16 (DEBUG):			from: 7260 minutes ago
+2020-01-02 11:05:16 (DEBUG):			to: 2 minutes ago
+2020-01-02 11:05:16 (INFO):		Usable local data available, trying to match with exchange data..
+2020-01-02 11:05:16 (DEBUG):		Fetching exchange data since 17 minutes ago
+2020-01-02 11:05:16 (DEBUG):		Available exchange data:
+2020-01-02 11:05:16 (DEBUG):			from: 16 minutes ago
+2020-01-02 11:05:16 (DEBUG):			to: 0 minutes ago
+2020-01-02 11:05:16 (DEBUG):		Stitching datasets
+2020-01-02 11:05:16 (INFO):		Full history locally available. Seeding the trading method with all required historical candles.
+2020-01-02 11:05:16 (DEBUG):		Seeding with:
+2020-01-02 11:05:16 (DEBUG):			from: 7260 minutes ago
+2020-01-02 11:05:16 (DEBUG):			to: 18 minutes ago
+2020-01-02 11:05:19 (DEBUG):	Warmup indicators with history data: 10 / 120  ( 5 days )
+2020-01-02 11:05:23 (DEBUG):	Warmup indicators with history data: 20 / 120  ( 5 days )
+2020-01-02 11:05:26 (DEBUG):	Warmup indicators with history data: 30 / 120  ( 5 days )
+2020-01-02 11:05:29 (DEBUG):	Warmup indicators with history data: 40 / 120  ( 5 days )
+2020-01-02 11:05:32 (DEBUG):	Warmup indicators with history data: 50 / 120  ( 5 days )
+2020-01-02 11:05:35 (DEBUG):	Warmup indicators with history data: 60 / 120  ( 5 days )
+2020-01-02 11:05:38 (DEBUG):	Warmup indicators with history data: 70 / 120  ( 5 days )
+2020-01-02 11:05:41 (DEBUG):	Warmup indicators with history data: 80 / 120  ( 5 days )
+2020-01-02 11:05:45 (DEBUG):	Warmup indicators with history data: 90 / 120  ( 5 days )
+2020-01-02 11:05:48 (DEBUG):	Warmup indicators with history data: 100 / 120  ( 5 days )
+2020-01-02 11:05:51 (DEBUG):	Warmup indicators with history data: 110 / 120  ( 5 days )
+2020-01-02 11:05:54 (DEBUG):	Strategy warmup with history data is complete
+2020-01-02 11:05:54 (INFO):	Starting to watch the market: Kraken ETH/EUR
+2020-01-02 11:05:54 (DEBUG):	scheduling ticks
+2020-01-02 11:05:54 (DEBUG):	Requested ETH/EUR trade data from Kraken ...
+2020-01-02 11:05:54 (DEBUG):	Requested ETH/EUR orderbook data from Kraken ...
+2020-01-02 11:05:54 (DEBUG):	Processing 46 new trades. From 2020-01-02 09:48:17 UTC to 2020-01-02 10:05:15 UTC. (17 minutes). Last price: 115.72
+2020-01-02 11:05:55 (DEBUG):	Received orderbook data. bid: 115.69 ask: 115.71 spread: 0.0173%, depth: 0.89M/1.57M sell/buy slippage 100k: 0.1956%/0.0802% (115.46/115.80)
+2020-01-02 11:05:55 (DEBUG):	Strategy debug log, bid/ask price: 115.69 / 115.71
+2020-01-02 11:06:14 (DEBUG):	Requested ETH/EUR trade data from Kraken ...
+2020-01-02 11:06:14 (DEBUG):	Requested ETH/EUR orderbook data from Kraken ...
+2020-01-02 11:06:14 (DEBUG):	Received orderbook data. bid: 115.67 ask: 115.68 spread: 0.0086%, depth: 0.89M/1.58M sell/buy slippage 100k: 0.2007%/0.0837% (115.44/115.78)
+2020-01-02 11:06:14 (DEBUG):	Strategy debug log, bid/ask price: 115.67 / 115.68
+2020-01-02 11:06:15 (DEBUG):	Processing 1 new trades. From 2020-01-02 10:06:03 UTC to 2020-01-02 10:06:03 UTC. (a few seconds). Last price: 115.71
+2020-01-02 11:06:34 (DEBUG):	Requested ETH/EUR trade data from Kraken ...
+2020-01-02 11:06:34 (DEBUG):	Requested ETH/EUR orderbook data from Kraken ...
+2020-01-02 11:06:34 (DEBUG):	Received orderbook data. bid: 115.71 ask: 115.72 spread: 0.0086%, depth: 1.02M/1.59M sell/buy slippage 100k: 0.1870%/0.0894% (115.49/115.82)
+2020-01-02 11:06:34 (DEBUG):	Strategy debug log, bid/ask price: 115.71 / 115.72
+2020-01-02 11:06:35 (DEBUG):	Processing 1 new trades. From 2020-01-02 10:06:22 UTC to 2020-01-02 10:06:22 UTC. (a few seconds). Last price: 115.7
+2020-01-02 11:06:54 (DEBUG):	Requested ETH/EUR trade data from Kraken ...
+2020-01-02 11:06:54 (DEBUG):	Requested ETH/EUR orderbook data from Kraken ...
+2020-01-02 11:06:54 (DEBUG):	Received orderbook data. bid: 115.68 ask: 115.73 spread: 0.0432%, depth: 1.00M/1.56M sell/buy slippage 100k: 0.1885%/0.0718% (115.46/115.81)
+2020-01-02 11:06:54 (DEBUG):	Strategy debug log, bid/ask price: 115.68 / 115.73
+2020-01-02 11:06:55 (DEBUG):	No new trades.
+2020-01-02 11:07:14 (DEBUG):	Requested ETH/EUR trade data from Kraken ...
+2020-01-02 11:07:14 (DEBUG):	Requested ETH/EUR orderbook data from Kraken ...
+2020-01-02 11:07:15 (DEBUG):	Received orderbook data. bid: 115.6 ask: 115.64 spread: 0.0346%, depth: 1.03M/1.57M sell/buy slippage 100k: 0.1814%/0.1033% (115.39/115.76)
+2020-01-02 11:07:15 (DEBUG):	Strategy debug log, bid/ask price: 115.6 / 115.64
+2020-01-02 11:07:15 (DEBUG):	Processing 1 new trades. From 2020-01-02 10:07:04 UTC to 2020-01-02 10:07:04 UTC. (a few seconds). Last price: 115.67
+2020-01-02 11:07:34 (DEBUG):	Requested ETH/EUR trade data from Kraken ...
+2020-01-02 11:07:34 (DEBUG):	Requested ETH/EUR orderbook data from Kraken ...
+2020-01-02 11:07:35 (DEBUG):	Received orderbook data. bid: 115.6 ask: 115.62 spread: 0.0173%, depth: 0.97M/1.61M sell/buy slippage 100k: 0.1760%/0.1121% (115.40/115.75)
+2020-01-02 11:07:35 (DEBUG):	Strategy debug log, bid/ask price: 115.6 / 115.62
+2020-01-02 11:07:35 (DEBUG):	No new trades.
+2020-01-02 11:07:54 (DEBUG):	Requested ETH/EUR trade data from Kraken 

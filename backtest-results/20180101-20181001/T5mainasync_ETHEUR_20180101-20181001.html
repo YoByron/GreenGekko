@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- This file was created with the aha Ansi HTML Adapter. http://ziz.delphigl.com/tool_aha.php -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xml+xhtml; charset=UTF-8" />
+<title>T5mainasync_ETHEUR_20180101-20181001</title>
+</head>
+<body style="color:white; background-color:black">
+<pre>
+
+    ______   ________  __    __  __    __   ______
+   /      \ /        |/  |  /  |/  |  /  | /      \
+  /$$$$$$  |€€€€€€€€/ $$ | /$$/ $$ | /$$/ /$$$$$$  |
+  $$ | _$$/ €€ |__    $$ |/$$/  $$ |/$$/  $$ |  $$ |
+  $$ |/    |€€    |   $$  $$&lt;   $$  $$&lt;   $$ |  $$ |
+  $$ |$$$$ |€€€€€/    $$$$$  \  $$$$$  \  $$ |  $$ |            <span style="color:red;">___</span><span style="color:white;">      
+  $$ \__$$ |€€ |_____ $$ |$$  \ $$ |$$  \ $$ \__$$ |           </span><span style="color:red;">/_\ `*</span><span style="color:white;">     
+  $$    $$/ €€       |$$ | $$  |$$ | $$  |$$    $$/           </span><span style="color:lime;">(o o)</span><span style="color:white;">     
+   $$$$$$/  €€€€€€€€/ $$/   $$/ $$/   $$/  $$$$$$/       </span><span style="color:lime;">-ooO--(_)--Ooo-</span><span style="color:white;">
+
+</span><span style="color:red;">	Gekko v2018.0.66.122</span><span style="color:white;">
+	I'm gonna make you rich, Bud Fox. 
+
+
+2018-10-17 10:59:02 (INFO):	Setting up Gekko in backtest mode
+2018-10-17 10:59:02 (INFO):	
+2018-10-17 10:59:02 (INFO):	Setting up:
+2018-10-17 10:59:02 (INFO):		 Paper Trader
+2018-10-17 10:59:02 (INFO):		 Paper trader that simulates fake trades.
+2018-10-17 10:59:02 (INFO):	
+
+2018-10-17 10:59:02 (INFO):	Setting up:
+2018-10-17 10:59:02 (INFO):		 Performance Analyzer
+2018-10-17 10:59:02 (INFO):		 Analyzes performances of trades
+2018-10-17 10:59:02 (INFO):	
+
+2018-10-17 10:59:02 (INFO):	Setting up:
+2018-10-17 10:59:02 (INFO):		 Trading Advisor
+2018-10-17 10:59:02 (INFO):		 Calculate trading advice
+2018-10-17 10:59:03 (INFO):		 Using the strategy: T5mainasync
+2018-10-17 10:59:03 (DEBUG):	*** Usage info for Tulip indicator macd :
+ { name: 'macd',
+  full_name: 'Moving Average Convergence/Divergence',
+  type: 'indicator',
+  inputs: 1,
+  options: 3,
+  outputs: 3,
+  input_names: [ 'real' ],
+  option_names: [ 'short period', 'long period', 'signal period' ],
+  output_names: [ 'macd', 'macd_signal', 'macd_histogram' ],
+  indicator: [Function],
+  start: [Function] }
+2018-10-17 10:59:03 (DEBUG):	*** Usage info for Tulip indicator ema :
+ { name: 'ema',
+  full_name: 'Exponential Moving Average',
+  type: 'overlay',
+  inputs: 1,
+  options: 1,
+  outputs: 1,
+  input_names: [ 'real' ],
+  option_names: [ 'period' ],
+  output_names: [ 'ema' ],
+  indicator: [Function],
+  start: [Function] }
+2018-10-17 10:59:03 (DEBUG):	*** Usage info for Tulip indicator ema :
+ { name: 'ema',
+  full_name: 'Exponential Moving Average',
+  type: 'overlay',
+  inputs: 1,
+  options: 1,
+  outputs: 1,
+  input_names: [ 'real' ],
+  option_names: [ 'period' ],
+  output_names: [ 'ema' ],
+  indicator: [Function],
+  start: [Function] }
+2018-10-17 10:59:03 (DEBUG):	*** Usage info for Tulip indicator rsi :
+ { name: 'rsi',
+  full_name: 'Relative Strength Index',
+  type: 'indicator',
+  inputs: 1,
+  options: 1,
+  outputs: 1,
+  input_names: [ 'real' ],
+  option_names: [ 'period' ],
+  output_names: [ 'rsi' ],
+  indicator: [Function],
+  start: [Function] }
+2018-10-17 10:59:03 (DEBUG):	*** Usage info for Tulip indicator stoch :
+ { name: 'stoch',
+  full_name: 'Stochastic Oscillator',
+  type: 'indicator',
+  inputs: 3,
+  options: 3,
+  outputs: 2,
+  input_names: [ 'high', 'low', 'close' ],
+  option_names: [ '%k period', '%k slowing period', '%d period' ],
+  output_names: [ 'stoch_k', 'stoch_d' ],
+  indicator: [Function],
+  start: [Function] }
+2018-10-17 10:59:03 (INFO):	
+
+
+2018-10-17 10:59:03 (INFO):		WARNING: BACKTESTING FEATURE NEEDS PROPER TESTING
+2018-10-17 10:59:03 (INFO):		WARNING: ACT ON THESE NUMBERS AT YOUR OWN RISK!
+
+2018-10-17 10:59:03 (DEBUG):	*** Requested 26400 minutes of warmup history data, so reading db since 2017-12-13T14:00:00Z UTC and start backtest at 2018-01-01T00:00:00+02:00 UTC
+2018-10-17 10:59:03 (DEBUG):	Check database exists: kraken
+2018-10-17 10:59:03 (DEBUG):	Database exists: kraken
+2018-10-17 10:59:03 (DEBUG):	Postgres connection pool is ready, db kraken
+2018-10-17 10:59:03 (DEBUG):	Warmup indicators with history data: 10 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:03 (DEBUG):	Warmup indicators with history data: 20 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:04 (DEBUG):	Warmup indicators with history data: 30 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:04 (DEBUG):	Warmup indicators with history data: 40 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:04 (DEBUG):	Warmup indicators with history data: 50 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:05 (DEBUG):	Warmup indicators with history data: 60 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:05 (DEBUG):	Warmup indicators with history data: 70 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:05 (DEBUG):	Warmup indicators with history data: 80 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:05 (DEBUG):	Warmup indicators with history data: 90 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:05 (DEBUG):	Warmup indicators with history data: 100 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:06 (DEBUG):	Warmup indicators with history data: 110 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:06 (DEBUG):	Warmup indicators with history data: 120 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:06 (DEBUG):	Warmup indicators with history data: 130 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:06 (DEBUG):	Warmup indicators with history data: 140 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:07 (DEBUG):	Warmup indicators with history data: 150 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:07 (DEBUG):	Warmup indicators with history data: 160 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:07 (DEBUG):	Warmup indicators with history data: 170 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:07 (DEBUG):	Warmup indicators with history data: 180 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:07 (DEBUG):	Warmup indicators with history data: 190 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:07 (DEBUG):	Warmup indicators with history data: 200 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:08 (DEBUG):	Warmup indicators with history data: 210 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:08 (DEBUG):	Warmup indicators with history data: 220 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:08 (DEBUG):	Warmup indicators with history data: 230 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:08 (DEBUG):	Warmup indicators with history data: 240 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:08 (DEBUG):	Warmup indicators with history data: 250 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:09 (DEBUG):	Warmup indicators with history data: 260 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:09 (DEBUG):	Warmup indicators with history data: 270 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:09 (DEBUG):	Warmup indicators with history data: 280 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:09 (DEBUG):	Warmup indicators with history data: 290 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:09 (DEBUG):	Warmup indicators with history data: 300 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:09 (DEBUG):	Warmup indicators with history data: 310 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:10 (DEBUG):	Warmup indicators with history data: 320 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:10 (DEBUG):	Warmup indicators with history data: 330 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:10 (DEBUG):	Warmup indicators with history data: 340 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:10 (DEBUG):	Warmup indicators with history data: 350 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:10 (DEBUG):	Warmup indicators with history data: 360 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:11 (DEBUG):	Warmup indicators with history data: 370 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:11 (DEBUG):	Warmup indicators with history data: 380 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:11 (DEBUG):	Warmup indicators with history data: 390 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:11 (DEBUG):	Warmup indicators with history data: 400 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:11 (DEBUG):	Warmup indicators with history data: 410 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:12 (DEBUG):	Warmup indicators with history data: 420 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:12 (DEBUG):	Warmup indicators with history data: 430 / 440  ( 18.333333333333332 days )
+2018-10-17 10:59:12 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 10:59:12 (INFO):	2018-01-01 08:00:00: Paper trader simulated a BUY @ 645.23 EUR 		0.00000000 EUR	=&gt; 1.54751019 ETH
+2018-10-17 10:59:17 (DEBUG):	SELL with 60M main strategy...
+2018-10-17 10:59:17 (INFO):	2018-01-11 01:00:00: Paper trader simulated a SELL @ 1035.90 EUR 	1600.66120711 EUR &lt;= 0.00000000 ETH
+2018-10-17 10:59:18 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 10:59:18 (INFO):	2018-01-13 13:00:00: Paper trader simulated a BUY @ 1060.00 EUR 		0.00000000 EUR	=&gt; 1.50779265 ETH
+2018-10-17 10:59:19 (DEBUG):	SELL with 60M main strategy...
+2018-10-17 10:59:19 (INFO):	2018-01-14 18:00:00: Paper trader simulated a SELL @ 1075.00 EUR 	1618.44578310 EUR &lt;= 0.00000000 ETH
+2018-10-17 10:59:25 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 10:59:25 (INFO):	2018-01-28 06:00:00: Paper trader simulated a BUY @ 912.01 EUR 		0.00000000 EUR	=&gt; 1.77193025 ETH
+2018-10-17 10:59:26 (DEBUG):	SELL with 60M main strategy...
+2018-10-17 10:59:26 (INFO):	2018-01-29 21:00:00: Paper trader simulated a SELL @ 942.40 EUR 	1667.36226699 EUR &lt;= 0.00000000 ETH
+2018-10-17 10:59:31 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 10:59:31 (INFO):	2018-02-09 19:00:00: Paper trader simulated a BUY @ 714.01 EUR 		0.00000000 EUR	=&gt; 2.33170575 ETH
+2018-10-17 10:59:32 (DEBUG):	SELL with 60M main strategy...
+2018-10-17 10:59:32 (INFO):	2018-02-10 22:00:00: Paper trader simulated a SELL @ 673.82 EUR 	1568.79324351 EUR &lt;= 0.00000000 ETH
+2018-10-17 10:59:34 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 10:59:34 (INFO):	2018-02-14 14:00:00: Paper trader simulated a BUY @ 724.05 EUR 		0.00000000 EUR	=&gt; 2.16344182 ETH
+2018-10-17 10:59:35 (DEBUG):	SELL with 60M main strategy...
+2018-10-17 10:59:35 (INFO):	2018-02-18 08:00:00: Paper trader simulated a SELL @ 752.33 EUR 	1625.18075116 EUR &lt;= 0.00000000 ETH
+2018-10-17 10:59:58 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 10:59:58 (INFO):	2018-04-08 14:00:00: Paper trader simulated a BUY @ 325.75 EUR 		0.00000000 EUR	=&gt; 4.98155941 ETH
+2018-10-17 10:59:59 (DEBUG):	SELL with 60M main strategy...
+2018-10-17 10:59:59 (INFO):	2018-04-09 23:00:00: Paper trader simulated a SELL @ 317.46 EUR 	1579.07368152 EUR &lt;= 0.00000000 ETH
+2018-10-17 10:59:59 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 10:59:59 (INFO):	2018-04-11 00:00:00: Paper trader simulated a BUY @ 334.98 EUR 		0.00000000 EUR	=&gt; 4.70686330 ETH
+2018-10-17 11:00:01 (DEBUG):	SELL with 60M main strategy...
+2018-10-17 11:00:01 (INFO):	2018-04-14 15:00:00: Paper trader simulated a SELL @ 396.91 EUR 	1865.39881073 EUR &lt;= 0.00000000 ETH
+2018-10-17 11:00:02 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 11:00:02 (INFO):	2018-04-15 16:00:00: Paper trader simulated a BUY @ 430.00 EUR 		0.00000000 EUR	=&gt; 4.33162956 ETH
+2018-10-17 11:00:02 (DEBUG):	SELL with 60M main strategy...
+2018-10-17 11:00:02 (INFO):	2018-04-16 08:00:00: Paper trader simulated a SELL @ 411.10 EUR 	1778.06181274 EUR &lt;= 0.00000000 ETH
+2018-10-17 11:00:03 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 11:00:03 (INFO):	2018-04-19 00:00:00: Paper trader simulated a BUY @ 423.61 EUR 		0.00000000 EUR	=&gt; 4.19110672 ETH
+2018-10-17 11:00:06 (DEBUG):	SELL with 60M main strategy...
+2018-10-17 11:00:06 (INFO):	2018-04-25 07:00:00: Paper trader simulated a SELL @ 523.31 EUR 	2189.95818555 EUR &lt;= 0.00000000 ETH
+2018-10-17 11:00:07 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 11:00:07 (INFO):	2018-04-27 02:00:00: Paper trader simulated a BUY @ 545.80 EUR 		0.00000000 EUR	=&gt; 4.00636359 ETH
+2018-10-17 11:00:08 (DEBUG):	SELL with 60M main strategy...
+2018-10-17 11:00:08 (INFO):	2018-04-29 14:00:00: Paper trader simulated a SELL @ 555.78 EUR 	2223.31677091 EUR &lt;= 0.00000000 ETH
+2018-10-17 11:00:10 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 11:00:10 (INFO):	2018-05-03 05:00:00: Paper trader simulated a BUY @ 589.00 EUR 		0.00000000 EUR	=&gt; 3.76906926 ETH
+2018-10-17 11:00:12 (DEBUG):	SELL with 60M main strategy...
+2018-10-17 11:00:12 (INFO):	2018-05-06 11:00:00: Paper trader simulated a SELL @ 643.00 EUR 	2419.87626687 EUR &lt;= 0.00000000 ETH
+2018-10-17 11:00:24 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 11:00:24 (INFO):	2018-06-03 09:00:00: Paper trader simulated a BUY @ 517.51 EUR 		0.00000000 EUR	=&gt; 4.66898504 ETH
+2018-10-17 11:00:25 (DEBUG):	SELL with 60M main strategy...
+2018-10-17 11:00:25 (INFO):	2018-06-04 11:00:00: Paper trader simulated a SELL @ 516.42 EUR 	2407.54051847 EUR &lt;= 0.00000000 ETH
+2018-10-17 11:00:32 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 11:00:32 (INFO):	2018-06-19 13:00:00: Paper trader simulated a BUY @ 454.93 EUR 		0.00000000 EUR	=&gt; 5.28417384 ETH
+2018-10-17 11:00:32 (DEBUG):	SELL with 60M main strategy...
+2018-10-17 11:00:32 (INFO):	2018-06-20 08:00:00: Paper trader simulated a SELL @ 448.80 EUR 	2367.97991356 EUR &lt;= 0.00000000 ETH
+2018-10-17 11:00:38 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 11:00:38 (INFO):	2018-07-02 16:00:00: Paper trader simulated a BUY @ 405.57 EUR 		0.00000000 EUR	=&gt; 5.82988865 ETH
+2018-10-17 11:00:39 (DEBUG):	SELL with 60M main strategy...
+2018-10-17 11:00:39 (INFO):	2018-07-04 01:00:00: Paper trader simulated a SELL @ 396.00 EUR 	2305.17295154 EUR &lt;= 0.00000000 ETH
+2018-10-17 11:00:41 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 11:00:41 (INFO):	2018-07-08 02:00:00: Paper trader simulated a BUY @ 414.00 EUR 		0.00000000 EUR	=&gt; 5.55969853 ETH
+2018-10-17 11:00:41 (DEBUG):	SELL with 60M main strategy...
+2018-10-17 11:00:41 (INFO):	2018-07-09 09:00:00: Paper trader simulated a SELL @ 408.90 EUR 	2269.95068782 EUR &lt;= 0.00000000 ETH
+2018-10-17 11:00:45 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 11:00:45 (INFO):	2018-07-16 12:00:00: Paper trader simulated a BUY @ 398.90 EUR 		0.00000000 EUR	=&gt; 5.68198987 ETH
+2018-10-17 11:00:46 (DEBUG):	SELL with 60M main strategy...
+2018-10-17 11:00:46 (INFO):	2018-07-18 22:00:00: Paper trader simulated a SELL @ 413.63 EUR 	2346.71610772 EUR &lt;= 0.00000000 ETH
+2018-10-17 11:01:05 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 11:01:05 (INFO):	2018-08-28 16:00:00: Paper trader simulated a BUY @ 248.30 EUR 		0.00000000 EUR	=&gt; 9.43695543 ETH
+2018-10-17 11:01:05 (DEBUG):	SELL with 60M main strategy...
+2018-10-17 11:01:05 (INFO):	2018-08-29 19:00:00: Paper trader simulated a SELL @ 246.12 EUR 	2319.13953522 EUR &lt;= 0.00000000 ETH
+2018-10-17 11:01:06 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 11:01:06 (INFO):	2018-09-01 17:00:00: Paper trader simulated a BUY @ 253.45 EUR 		0.00000000 EUR	=&gt; 9.13655879 ETH
+2018-10-17 11:01:07 (DEBUG):	SELL with 60M main strategy...
+2018-10-17 11:01:07 (INFO):	2018-09-03 07:00:00: Paper trader simulated a SELL @ 247.26 EUR 	2255.71686812 EUR &lt;= 0.00000000 ETH
+2018-10-17 11:01:12 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 11:01:12 (INFO):	2018-09-14 05:00:00: Paper trader simulated a BUY @ 188.44 EUR 		0.00000000 EUR	=&gt; 11.95252225 ETH
+2018-10-17 11:01:14 (DEBUG):	SELL with 60M main strategy...
+2018-10-17 11:01:14 (INFO):	2018-09-17 11:00:00: Paper trader simulated a SELL @ 185.50 EUR 	2213.86708805 EUR &lt;= 0.00000000 ETH
+2018-10-17 11:01:16 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 11:01:16 (INFO):	2018-09-21 01:00:00: Paper trader simulated a BUY @ 190.08 EUR 		0.00000000 EUR	=&gt; 11.62955748 ETH
+2018-10-17 11:01:17 (DEBUG):	SELL with 60M main strategy...
+2018-10-17 11:01:17 (INFO):	2018-09-24 09:00:00: Paper trader simulated a SELL @ 198.47 EUR 	2304.65609564 EUR &lt;= 0.00000000 ETH
+2018-10-17 11:01:19 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 11:01:19 (INFO):	2018-09-28 00:00:00: Paper trader simulated a BUY @ 198.93 EUR 		0.00000000 EUR	=&gt; 11.56788373 ETH
+2018-10-17 11:01:19 (DEBUG):	SELL with 60M main strategy...
+2018-10-17 11:01:19 (INFO):	2018-09-29 04:00:00: Paper trader simulated a SELL @ 186.65 EUR 	2155.90677995 EUR &lt;= 0.00000000 ETH
+2018-10-17 11:01:19 (DEBUG):	BUY with 60M main strategy...
+2018-10-17 11:01:19 (INFO):	2018-09-29 12:00:00: Paper trader simulated a BUY @ 199.00 EUR 		0.00000000 EUR	=&gt; 10.81745185 ETH
+2018-10-17 11:01:20 (INFO):	
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) REPORT:
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) entry date (UTC)  	exit date (UTC)  	exposed duration	P&amp;L 	profit
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) 2018-01-01 07:00	2018-01-11 00:00	10 days         	602.16	60.31
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) 2018-01-13 12:00	2018-01-14 17:00	a day           	20.19	1.26
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) 2018-01-28 05:00	2018-01-29 20:00	2 days          	51.34	3.18
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) 2018-02-09 18:00	2018-02-10 21:00	a day           	-96.07	-5.77
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) 2018-02-14 13:00	2018-02-18 07:00	4 days          	58.74	3.75
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) 2018-04-08 12:00	2018-04-09 21:00	a day           	-43.67	-2.69
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) 2018-04-10 22:00	2018-04-14 13:00	4 days          	288.69	18.31
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) 2018-04-15 14:00	2018-04-16 06:00	16 hours        	-84.54	-4.54
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) 2018-04-18 22:00	2018-04-25 05:00	6 days          	414.56	23.35
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) 2018-04-27 00:00	2018-04-29 12:00	3 days          	36.64	1.68
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) 2018-05-03 03:00	2018-05-06 09:00	3 days          	199.89	9.00
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) 2018-06-03 07:00	2018-06-04 09:00	a day           	-8.71	-0.36
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) 2018-06-19 11:00	2018-06-20 06:00	19 hours        	-35.95	-1.50
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) 2018-07-02 14:00	2018-07-03 23:00	a day           	-59.25	-2.51
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) 2018-07-08 00:00	2018-07-09 07:00	a day           	-31.76	-1.38
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) 2018-07-16 10:00	2018-07-18 20:00	2 days          	80.17	3.54
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) 2018-08-28 14:00	2018-08-29 17:00	a day           	-24.06	-1.03
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) 2018-09-01 15:00	2018-09-03 05:00	2 days          	-59.94	-2.59
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) 2018-09-14 03:00	2018-09-17 09:00	3 days          	-38.47	-1.71
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) 2018-09-20 23:00	2018-09-24 07:00	3 days          	94.11	4.26
+2018-10-17 11:01:20 (INFO):	(ROUNDTRIP) 2018-09-27 22:00	2018-09-29 02:00	a day           	-145.29	-6.31
+2018-10-17 11:01:20 (INFO):	
+2018-10-17 11:01:20 (INFO):	(PROFIT REPORT) start time:			 2017-12-13 14:00:00
+2018-10-17 11:01:20 (INFO):	(PROFIT REPORT) end time:			 2018-09-30 22:01:00
+2018-10-17 11:01:20 (INFO):	(PROFIT REPORT) timespan:			 10 months
+2018-10-17 11:01:20 (INFO):	(PROFIT REPORT) exposure:			 0.18034854035912387
+2018-10-17 11:01:20 (INFO):	
+2018-10-17 11:01:20 (INFO):	(PROFIT REPORT) start price:			 531.14 EUR
+2018-10-17 11:01:20 (INFO):	(PROFIT REPORT) end price:			 196.3 EUR
+2018-10-17 11:01:20 (INFO):	(PROFIT REPORT) Market:				 </span><span style="color:red;">-63.04175923%</span><span style="color:white;">
+2018-10-17 11:01:20 (INFO):	
+2018-10-17 11:01:20 (INFO):	(PROFIT REPORT) amount of trades:		 43
+2018-10-17 11:01:20 (INFO):	(PROFIT REPORT) original balance:		 1000.00000000 EUR
+2018-10-17 11:01:20 (INFO):	(PROFIT REPORT) current balance:		 2152.67291815 EUR
+2018-10-17 11:01:20 (INFO):	(PROFIT REPORT) profit:				 1152.67291815 EUR (</span><span style="color:lime;">115.26729181%</span><span style="color:white;">)
+2018-10-17 11:01:20 (INFO):	(PROFIT REPORT) simulated yearly profit:	 1445.0942841065355 EUR (144.50942841065353%)
+2018-10-17 11:01:20 (INFO):	(PROFIT REPORT) sharpe ratio:			 9.497725443546088
+2018-10-17 11:01:20 (INFO):	(PROFIT REPORT) expected downside:		 -4.175087744215718
+</span>
+</pre>
+</body>
+</html>

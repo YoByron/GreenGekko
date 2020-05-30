@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- This file was created with the aha Ansi HTML Adapter. https://github.com/theZiz/aha -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xml+xhtml; charset=UTF-8" />
+<title>T5multimix_ETHEUR_20180101-20190901</title>
+</head>
+<body style="color:white; background-color:black">
+<pre>
+
+   <span style="color:lime;">~Gr€€n~</span><span style="color:white;">
+    ______   ________  __    __  __    __   ______
+   /      \ /        |/  |  /  |/  |  /  | /      \
+  /$$$$$$  |€€€€€€€€/ $$ | /$$/ $$ | /$$/ /$$$$$$  |
+  $$ | _$$/ €€ |__    $$ |/$$/  $$ |/$$/  $$ |  $$ |
+  $$ |/    |€€    |   $$  $$&lt;   $$  $$&lt;   $$ |  $$ |
+  $$ |$$$$ |€€€€€/    $$$$$  \  $$$$$  \  $$ |  $$ |            </span><span style="color:red;">___</span><span style="color:white;">      
+  $$ \__$$ |€€ |_____ $$ |$$  \ $$ |$$  \ $$ \__$$ |           </span><span style="color:red;">/_\ `*</span><span style="color:white;">     
+  $$    $$/ €€       |$$ | $$  |$$ | $$  |$$    $$/           </span><span style="color:lime;">(o o)</span><span style="color:white;">     
+   $$$$$$/  €€€€€€€€/ $$/   $$/ $$/   $$/  $$$$$$/       </span><span style="color:lime;">-ooO--(_)--Ooo-</span><span style="color:white;">
+
+</span><span style="color:red;">	Gekko v2019.0.68.271</span><span style="color:white;">
+	I'm gonna make you rich, Bud Fox. 
+
+
+2019-09-09 16:07:22 (INFO):	Setting up Gekko in backtest mode
+2019-09-09 16:07:22 (INFO):	
+2019-09-09 16:07:22 (INFO):	Setting up:
+2019-09-09 16:07:22 (INFO):		 Paper Trader
+2019-09-09 16:07:22 (INFO):		 Paper trader that simulates fake trades.
+2019-09-09 16:07:22 (INFO):	
+
+2019-09-09 16:07:22 (INFO):	Setting up:
+2019-09-09 16:07:22 (INFO):		 Performance Analyzer
+2019-09-09 16:07:22 (INFO):		 Analyzes performances of trades
+2019-09-09 16:07:22 (INFO):	
+
+2019-09-09 16:07:22 (INFO):	Setting up:
+2019-09-09 16:07:22 (INFO):		 Trading Advisor
+2019-09-09 16:07:22 (INFO):		 Calculate trading advice
+2019-09-09 16:07:22 (INFO):		 Using the strategy: Think5
+
+2019-09-09 16:07:22 (INFO):	*** T5 Runtime optimizer: Started with blank trade history dataset!
+2019-09-09 16:07:22 (INFO):	*** T5 Runtime optimizer: Using initial RSI values 66 / 44
+2019-09-09 16:07:22 (INFO):	
+
+
+2019-09-09 16:07:22 (INFO):		WARNING: BACKTESTING FEATURE NEEDS PROPER TESTING
+2019-09-09 16:07:22 (INFO):		WARNING: ACT ON THESE NUMBERS AT YOUR OWN RISK!
+
+2019-09-09 16:07:22 (DEBUG):	*** Requested 36000 minutes of warmup history data, so reading db since 2017-12-06T22:00:00Z UTC and start backtest at 2018-01-01T00:00:00+02:00 UTC
+2019-09-09 16:07:22 (DEBUG):	Check database exists: kraken
+2019-09-09 16:07:22 (DEBUG):	DB version: PostgreSQL 11.5 on x86_64-pc-linux-gnu
+2019-09-09 16:07:22 (DEBUG):	Database exists: kraken
+2019-09-09 16:07:22 (DEBUG):	Postgres connection pool is ready, db kraken
+2019-09-09 16:07:26 (DEBUG):	T5coworker strategy warmup with history data: 10 / 600  ( 25 days )
+2019-09-09 16:07:26 (DEBUG):	T5multimarket-xt strategy warmup with history data: 10 / 600  ( 25 days )
+2019-09-09 16:07:26 (DEBUG):	T5fasciatus strategy warmup with history data: 10 / 600  ( 25 days )
+2019-09-09 16:07:30 (DEBUG):	T5coworker strategy warmup with history data: 20 / 600  ( 25 days )
+2019-09-09 16:07:30 (DEBUG):	T5multimarket-xt strategy warmup with history data: 20 / 600  ( 25 days )
+2019-09-09 16:07:30 (DEBUG):	T5fasciatus strategy warmup with history data: 20 / 600  ( 25 days )
+2019-09-09 16:07:34 (DEBUG):	T5coworker strategy warmup with history data: 30 / 600  ( 25 days )
+2019-09-09 16:07:34 (DEBUG):	T5multimarket-xt strategy warmup with history data: 30 / 600  ( 25 days )
+2019-09-09 16:07:34 (DEBUG):	T5fasciatus strategy warmup with history data: 30 / 600  ( 25 days )
+2019-09-09 16:07:38 (DEBUG):	T5coworker strategy warmup with history data: 40 / 600  ( 25 days )
+2019-09-09 16:07:38 (DEBUG):	T5multimarket-xt strategy warmup with history data: 40 / 600  ( 25 days )
+2019-09-09 16:07:38 (DEBUG):	T5fasciatus strategy warmup with history data: 40 / 600  ( 25 days )
+2019-09-09 16:07:41 (DEBUG):	T5coworker strategy warmup with history data: 50 / 600  ( 25 days )
+2019-09-09 16:07:41 (DEBUG):	T5multimarket-xt strategy warmup with history data: 50 / 600  ( 25 days )
+2019-09-09 16:07:41 (DEBUG):	T5fasciatus strategy warmup with history data: 50 / 600  ( 25 days )
+2019-09-09 16:07:45 (DEBUG):	T5coworker strategy warmup with history data: 60 / 600  ( 25 days )
+2019-09-09 16:07:45 (DEBUG):	T5multimarket-xt strategy warmup with history data: 60 / 600  ( 25 days )
+2019-09-09 16:07:45 (DEBUG):	T5fasciatus strategy warmup with history data: 60 / 600  ( 25 days )
+2019-09-09 16:07:49 (DEBUG):	T5coworker strategy warmup with history data: 70 / 600  ( 25 days )
+2019-09-09 16:07:49 (DEBUG):	T5multimarket-xt strategy warmup with history data: 70 / 600  ( 25 days )
+2019-09-09 16:07:49 (DEBUG):	T5fasciatus strategy warmup with history data: 70 / 600  ( 25 days )
+2019-09-09 16:07:52 (DEBUG):	T5coworker strategy warmup with history data: 80 / 600  ( 25 days )
+2019-09-09 16:07:52 (DEBUG):	T5multimarket-xt strategy warmup with history data: 80 / 600  ( 25 days )
+2019-09-09 16:07:52 (DEBUG):	T5fasciatus strategy warmup with history data: 80 / 600  ( 25 days )
+2019-09-09 16:07:56 (DEBUG):	T5coworker strategy warmup with history data: 90 / 600  ( 25 days )
+2019-09-09 16:07:56 (DEBUG):	T5multimarket-xt strategy warmup with history data: 90 / 600  ( 25 days )
+2019-09-09 16:07:56 (DEBUG):	T5fasciatus strategy warmup with history data: 90 / 600  ( 25 days )
+2019-09-09 16:07:59 (DEBUG):	T5coworker strategy warmup with history data: 100 / 600  ( 25 days )
+2019-09-09 16:07:59 (DEBUG):	T5multimarket-xt strategy warmup with history data: 100 / 600  ( 25 days )
+2019-09-09 16:07:59 (DEBUG):	T5fasciatus strategy warmup with history data: 100 / 600  ( 25 days )
+2019-09-09 16:08:03 (DEBUG):	T5coworker strategy warmup with history data: 110 / 600  ( 25 days )
+2019-09-09 16:08:03 (DEBUG):	T5multimarket-xt strategy warmup with history data: 110 / 600  ( 25 days )
+2019-09-09 16:08:03 (DEBUG):	T5fasciatus strategy warmup with history data: 110 / 600  ( 25 days )
+2019-09-09 16:08:07 (DEBUG):	T5coworker strategy warmup with history data: 120 / 600  ( 25 days )
+2019-09-09 16:08:07 (DEBUG):	T5multimarket-xt strategy warmup with history data: 120 / 600  ( 25 days )
+2019-09-09 16:08:07 (DEBUG):	T5fasciatus strategy warmup with history data: 120 / 600  ( 25 days )
+2019-09-09 16:08:10 (DEBUG):	T5coworker strategy warmup with history data: 130 / 600  ( 25 days )
+2019-09-09 16:08:10 (DEBUG):	T5multimarket-xt strategy warmup with history data: 130 / 600  ( 25 days )
+2019-09-09 16:08:10 (DEBUG):	T5fasciatus strategy warmup with history data: 130 / 600  ( 25 days )
+2019-09-09 16:08:14 (DEBUG):	T5coworker strategy warmup with history data: 140 / 600  ( 25 days )
+2019-09-09 16:08:14 (DEBUG):	T5multimarket-xt strategy warmup with history data: 140 / 600  ( 25 days )
+2019-09-09 16:08:14 (DEBUG):	T5fasciatus strategy warmup with history data: 140 / 600  ( 25 days )
+2019-09-09 16:08:18 (DEBUG):	T5coworker strategy warmup with history data: 150 / 600  ( 25 days )
+2019-09-09 16:08:18 (DEBUG):	T5multimarket-xt strategy warmup with history data: 150 / 600  ( 25 days )
+2019-09-09 16:08:18 (DEBUG):	T5fasciatus strategy warmup with history data: 150 / 600  ( 25 days )
+2019-09-09 16:08:22 (DEBUG):	T5coworker strategy warmup with history data: 160 / 600  ( 25 days )
+2019-09-09 16:08:22 (DEBUG):	T5multimarket-xt strategy warmup with history data: 160 / 600  ( 25 days )
+2019-09-09 16:08:22 (DEBUG):	T5fasciatus strategy warmup with history data: 160 / 600  ( 25 days )
+2019-09-09 16:08:26 (DEBUG):	T5coworker strategy warmup with history data: 170 / 600  ( 25 days )
+2019-09-09 16:08:26 (DEBUG):	T5multimarket-xt strategy warmup with history data: 170 / 600  ( 25 days )
+2019-09-09 16:08:26 (DEBUG):	T5fasciatus strategy warmup with history data: 170 / 600  ( 25 days )
+2019-09-09 16:08:30 (DEBUG):	T5coworker strategy warmup with history data: 180 / 600  ( 25 days )
+2019-09-09 16:08:30 (DEBUG):	T5multimarket-xt strategy warmup with history data: 180 / 600  ( 25 days )
+2019-09-09 16:08:30 (DEBUG):	T5fasciatus strategy warmup with history data: 180 / 600  ( 25 days )
+2019-09-09 16:08:34 (DEBUG):	T5coworker strategy warmup with history data: 190 / 600  ( 25 days )
+2019-09-09 16:08:34 (DEBUG):	T5multimarket-xt strategy warmup with history data: 190 / 600  ( 25 days )
+2019-09-09 16:08:34 (DEBUG):	T5fasciatus strategy warmup with history data: 190 / 600  ( 25 days )
+2019-09-09 16:08:38 (DEBUG):	T5coworker strategy warmup with history data: 200 / 600  ( 25 days )
+2019-09-09 16:08:38 (DEBUG):	T5multimarket-xt strategy warmup with history data: 200 / 600  ( 25 days )
+2019-09-09 16:08:38 (DEBUG):	T5fasciatus strategy warmup with history data: 200 / 600  ( 25 days )
+2019-09-09 16:08:42 (DEBUG):	T5coworker strategy warmup with history data: 210 / 600  ( 25 days )
+2019-09-09 16:08:42 (DEBUG):	T5multimarket-xt strategy warmup with history data: 210 / 600  ( 25 days )
+2019-09-09 16:08:42 (DEBUG):	T5fasciatus strategy warmup with history data: 210 / 600  ( 25 days )
+2019-09-09 16:08:47 (DEBUG):	T5coworker strategy warmup with history data: 220 / 600  ( 25 days )
+2019-09-09 16:08:47 (DEBUG):	T5multimarket-xt strategy warmup with history data: 220 / 600  ( 25 days )
+2019-09-09 16:08:47 (DEBUG):	T5fasciatus strategy warmup with history data: 220 / 600  ( 25 days )
+2019-09-09 16:08:51 (DEBUG):	T5coworker strategy warmup with history data: 230 / 600  ( 25 days )
+2019-09-09 16:08:51 (DEBUG):	T5multimarket-xt strategy warmup with history data: 230 / 600  ( 25 days )
+2019-09-09 16:08:51 (DEBUG):	T5fasciatus strategy warmup with history data: 230 / 600  ( 25 days )
+2019-09-09 16:08:55 (DEBUG):	T5coworker strategy warmup with history data: 240 / 600  ( 25 days )
+2019-09-09 16:08:55 (DEBUG):	T5multimarket-xt strategy warmup with history data: 240 / 600  ( 25 days )
+2019-09-09 16:08:55 (DEBUG):	T5fasciatus strategy warmup with history data: 240 / 600  ( 25 days )
+2019-09-09 16:09:00 (DEBUG):	T5coworker strategy warmup with history data: 250 / 600  ( 25 days )
+2019-09-09 16:09:00 (DEBUG):	T5multimarket-xt strategy warmup with history data: 250 / 600  ( 25 days )
+2019-09-09 16:09:00 (DEBUG):	T5fasciatus strategy warmup with history data: 250 / 600  ( 25 days )
+2019-09-09 16:09:04 (DEBUG):	T5coworker strategy warmup with history data: 260 / 600  ( 25 days )
+2019-09-09 16:09:04 (DEBUG):	T5multimarket-xt strategy warmup with history data: 260 / 600  ( 25 days )
+2019-09-09 16:09:04 (DEBUG):	T5fasciatus strategy warmup with history data: 260 / 600  ( 25 days )
+2019-09-09 16:09:09 (DEBUG):	T5coworker strategy warmup with history data: 270 / 600  ( 25 days )
+2019-09-09 16:09:09 (DEBUG):	T5multimarket-xt strategy warmup with history data: 270 / 600  ( 25 days )
+2019-09-09 16:09:09 (DEBUG):	T5fasciatus strategy warmup with history data: 270 / 600  ( 25 days )
+2019-09-09 16:09:13 (DEBUG):	T5coworker strategy warmup with history data: 280 / 600  ( 25 days )
+2019-09-09 16:09:13 (DEBUG):	T5multimarket-xt strategy warmup with history data: 280 / 600  ( 25 days )
+2019-09-09 16:09:13 (DEBUG):	T5fasciatus strategy warmup with history data: 280 / 600  ( 25 days )
+2019-09-09 16:09:18 (DEBUG):	T5coworker strategy warmup with history data: 290 / 600  ( 25 days )
+2019-09-09 16:09:18 (DEBUG):	T5multimarket-xt strategy warmup with history data: 290 / 600  ( 25 days )
+2019-09-09 16:09:18 (DEBUG):	T5fasciatus strategy warmup with history data: 290 / 600  ( 25 days )
+2019-09-09 16:09:23 (DEBUG):	T5coworker strategy warmup with history data: 300 / 600  ( 25 days )
+2019-09-09 16:09:23 (DEBUG):	T5multimarket-xt strategy warmup with history data: 300 / 600  ( 25 days )
+2019-09-09 16:09:23 (DEBUG):	T5fasciatus strategy warmup with history data: 300 / 600  ( 25 days )
+2019-09-09 16:09:27 (DEBUG):	T5coworker strategy warmup with history data: 310 / 600  ( 25 days )
+2019-09-09 16:09:27 (DEBUG):	T5multimarket-xt strategy warmup with history data: 310 / 600  ( 25 days )
+2019-09-09 16:09:27 (DEBUG):	T5fasciatus strategy warmup with history data: 310 / 600  ( 25 days )
+2019-09-09 16:09:32 (DEBUG):	T5coworker strategy warmup with history data: 320 / 600  ( 25 days )
+2019-09-09 16:09:32 (DEBUG):	T5multimarket-xt strategy warmup with history data: 320 / 600  ( 25 days )
+2019-09-09 16:09:32 (DEBUG):	T5fasciatus strategy warmup with history data: 320 / 600  ( 25 days )
+2019-09-09 16:09:37 (DEBUG):	T5coworker strategy warmup with history data: 330 / 600  ( 25 days )
+2019-09-09 16:09:37 (DEBUG):	T5multimarket-xt strategy warmup with history data: 330 / 600  ( 25 days )
+2019-09-09 16:09:37 (DEBUG):	T5fasciatus strategy warmup with history data: 330 / 600  ( 25 days )
+2019-09-09 16:09:42 (DEBUG):	T5coworker strategy warmup with history data: 340 / 600  ( 25 days )
+2019-09-09 16:09:42 (DEBUG):	T5multimarket-xt strategy warmup with history data: 340 / 600  ( 25 days )
+2019-09-09 16:09:42 (DEBUG):	T5fasciatus strategy warmup with history data: 340 / 600  ( 25 days )
+2019-09-09 16:09:46 (DEBUG):	T5coworker strategy warmup with history data: 350 / 600  ( 25 days )
+2019-09-09 16:09:46 (DEBUG):	T5multimarket-xt strategy warmup with history data: 350 / 600  ( 25 days )
+2019-09-09 16:09:46 (DEBUG):	T5fasciatus strategy warmup with history data: 350 / 600  ( 25 days )
+2019-09-09 16:09:51 (DEBUG):	T5coworker strategy warmup with history data: 360 / 600  ( 25 days )
+2019-09-09 16:09:51 (DEBUG):	T5multimarket-xt strategy warmup with history data: 360 / 600  ( 25 days )
+2019-09-09 16:09:51 (DEBUG):	T5fasciatus strategy warmup with history data: 360 / 600  ( 25 days )
+2019-09-09 16:09:56 (DEBUG):	T5coworker strategy warmup with history data: 370 / 600  ( 25 days )
+2019-09-09 16:09:56 (DEBUG):	T5multimarket-xt strategy warmup with history data: 370 / 600  ( 25 days )
+2019-09-09 16:09:56 (DEBUG):	T5fasciatus strategy warmup with history data: 370 / 600  ( 25 days )
+2019-09-09 16:10:01 (DEBUG):	T5coworker strategy warmup with history data: 380 / 600  ( 25 days )
+2019-09-09 16:10:01 (DEBUG):	T5multimarket-xt strategy warmup with history data: 380 / 600  ( 25 days )
+2019-09-09 16:10:01 (DEBUG):	T5fasciatus strategy warmup with history data: 380 / 600  ( 25 days )
+2019-09-09 16:10:05 (DEBUG):	T5coworker strategy warmup with history data: 390 / 600  ( 25 days )
+2019-09-09 16:10:05 (DEBUG):	T5multimarket-xt strategy warmup with history data: 390 / 600  ( 25 days )
+2019-09-09 16:10:06 (DEBUG):	T5fasciatus strategy warmup with history data: 390 / 600  ( 25 days )
+2019-09-09 16:10:10 (DEBUG):	T5coworker strategy warmup with history data: 400 / 600  ( 25 days )
+2019-09-09 16:10:10 (DEBUG):	T5multimarket-xt strategy warmup with history data: 400 / 600  ( 25 days )
+2019-09-09 16:10:10 (DEBUG):	T5fasciatus strategy warmup with history data: 400 / 600  ( 25 days )
+2019-09-09 16:10:15 (DEBUG):	T5coworker strategy warmup with history data: 410 / 600  ( 25 days )
+2019-09-09 16:10:15 (DEBUG):	T5multimarket-xt strategy warmup with history data: 410 / 600  ( 25 days )
+2019-09-09 16:10:15 (DEBUG):	T5fasciatus strategy warmup with history data: 410 / 600  ( 25 days )
+2019-09-09 16:10:20 (DEBUG):	T5coworker strategy warmup with history data: 420 / 600  ( 25 days )
+2019-09-09 16:10:20 (DEBUG):	T5multimarket-xt strategy warmup with history data: 420 / 600  ( 25 days )
+2019-09-09 16:10:20 (DEBUG):	T5fasciatus strategy warmup with history data: 420 / 600  ( 25 days )
+2019-09-09 16:10:25 (DEBUG):	T5coworker strategy warmup with history data: 430 / 600  ( 25 days )
+2019-09-09 16:10:25 (DEBUG):	T5multimarket-xt strategy warmup with history data: 430 / 600  ( 25 days )
+2019-09-09 16:10:25 (DEBUG):	T5fasciatus strategy warmup with history data: 430 / 600  ( 25 days )
+2019-09-09 16:10:30 (DEBUG):	T5coworker strategy warmup with history data: 440 / 600  ( 25 days )
+2019-09-09 16:10:30 (DEBUG):	T5multimarket-xt strategy warmup with history data: 440 / 600  ( 25 days )
+2019-09-09 16:10:30 (DEBUG):	T5fasciatus strategy warmup with history data: 440 / 600  ( 25 days )
+2019-09-09 16:10:34 (DEBUG):	T5coworker strategy warmup with history data: 450 / 600  ( 25 days )
+2019-09-09 16:10:34 (DEBUG):	T5multimarket-xt strategy warmup with history data: 450 / 600  ( 25 days )
+2019-09-09 16:10:34 (DEBUG):	T5fasciatus strategy warmup with history data: 450 / 600  ( 25 days )
+2019-09-09 16:10:39 (DEBUG):	T5coworker strategy warmup with history data: 460 / 600  ( 25 days )
+2019-09-09 16:10:39 (DEBUG):	T5multimarket-xt strategy warmup with history data: 460 / 600  ( 25 days )
+2019-09-09 16:10:39 (DEBUG):	T5fasciatus strategy warmup with history data: 460 / 600  ( 25 days )
+2019-09-09 16:10:44 (DEBUG):	T5coworker strategy warmup with history data: 470 / 600  ( 25 days )
+2019-09-09 16:10:44 (DEBUG):	T5multimarket-xt strategy warmup with history data: 470 / 600  ( 25 days )
+2019-09-09 16:10:44 (DEBUG):	T5fasciatus strategy warmup with history data: 470 / 600  ( 25 days )
+2019-09-09 16:10:49 (DEBUG):	T5coworker strategy warmup with history data: 480 / 600  ( 25 days )
+2019-09-09 16:10:49 (DEBUG):	T5multimarket-xt strategy warmup with history data: 480 / 600  ( 25 days )
+2019-09-09 16:10:49 (DEBUG):	T5fasciatus strategy warmup with history data: 480 / 600  ( 25 days )
+2019-09-09 16:10:54 (DEBUG):	T5coworker strategy warmup with history data: 490 / 600  ( 25 days )
+2019-09-09 16:10:54 (DEBUG):	T5multimarket-xt strategy warmup with history data: 490 / 600  ( 25 days )
+2019-09-09 16:10:54 (DEBUG):	T5fasciatus strategy warmup with history data: 490 / 600  ( 25 days )
+2019-09-09 16:10:59 (DEBUG):	T5coworker strategy warmup with history data: 500 / 600  ( 25 days )
+2019-09-09 16:10:59 (DEBUG):	T5multimarket-xt strategy warmup with history data: 500 / 600  ( 25 days )
+2019-09-09 16:10:59 (DEBUG):	T5fasciatus strategy warmup with history data: 500 / 600  ( 25 days )
+2019-09-09 16:11:04 (DEBUG):	T5coworker strategy warmup with history data: 510 / 600  ( 25 days )
+2019-09-09 16:11:04 (DEBUG):	T5multimarket-xt strategy warmup with history data: 510 / 600  ( 25 days )
+2019-09-09 16:11:04 (DEBUG):	T5fasciatus strategy warmup with history data: 510 / 600  ( 25 days )
+2019-09-09 16:11:09 (DEBUG):	T5coworker strategy warmup with history data: 520 / 600  ( 25 days )
+2019-09-09 16:11:09 (DEBUG):	T5multimarket-xt strategy warmup with history data: 520 / 600  ( 25 days )
+2019-09-09 16:11:09 (DEBUG):	T5fasciatus strategy warmup with history data: 520 / 600  ( 25 days )
+2019-09-09 16:11:14 (DEBUG):	T5coworker strategy warmup with history data: 530 / 600  ( 25 days )
+2019-09-09 16:11:14 (DEBUG):	T5multimarket-xt strategy warmup with history data: 530 / 600  ( 25 days )
+2019-09-09 16:11:14 (DEBUG):	T5fasciatus strategy warmup with history data: 530 / 600  ( 25 days )
+2019-09-09 16:11:19 (DEBUG):	T5coworker strategy warmup with history data: 540 / 600  ( 25 days )
+2019-09-09 16:11:19 (DEBUG):	T5multimarket-xt strategy warmup with history data: 540 / 600  ( 25 days )
+2019-09-09 16:11:19 (DEBUG):	T5fasciatus strategy warmup with history data: 540 / 600  ( 25 days )
+2019-09-09 16:11:23 (DEBUG):	T5coworker strategy warmup with history data: 550 / 600  ( 25 days )
+2019-09-09 16:11:23 (DEBUG):	T5multimarket-xt strategy warmup with history data: 550 / 600  ( 25 days )
+2019-09-09 16:11:24 (DEBUG):	T5fasciatus strategy warmup with history data: 550 / 600  ( 25 days )
+2019-09-09 16:11:28 (DEBUG):	T5coworker strategy warmup with history data: 560 / 600  ( 25 days )
+2019-09-09 16:11:28 (DEBUG):	T5multimarket-xt strategy warmup with history data: 560 / 600  ( 25 days )
+2019-09-09 16:11:28 (DEBUG):	T5fasciatus strategy warmup with history data: 560 / 600  ( 25 days )
+2019-09-09 16:11:33 (DEBUG):	T5coworker strategy warmup with history data: 570 / 600  ( 25 days )
+2019-09-09 16:11:33 (DEBUG):	T5multimarket-xt strategy warmup with history data: 570 / 600  ( 25 days )
+2019-09-09 16:11:33 (DEBUG):	T5fasciatus strategy warmup with history data: 570 / 600  ( 25 days )
+2019-09-09 16:11:38 (DEBUG):	T5coworker strategy warmup with history data: 580 / 600  ( 25 days )
+2019-09-09 16:11:38 (DEBUG):	T5multimarket-xt strategy warmup with history data: 580 / 600  ( 25 days )
+2019-09-09 16:11:38 (DEBUG):	T5fasciatus strategy warmup with history data: 580 / 600  ( 25 days )
+2019-09-09 16:11:43 (DEBUG):	T5coworker strategy warmup with history data: 590 / 600  ( 25 days )
+2019-09-09 16:11:43 (DEBUG):	T5multimarket-xt strategy warmup with history data: 590 / 600  ( 25 days )
+2019-09-09 16:11:43 (DEBUG):	T5fasciatus strategy warmup with history data: 590 / 600  ( 25 days )
+
+2019-09-09 16:11:48 (INFO):	*** T5 optimizer: Changing RSI thresholds to 59 / 33
+
+2019-09-09 16:11:48 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 16:11:48 (INFO):	2017-12-31 23:01:00: Paper trader simulated a BUY @ 634.33 EUR 		0.00000000 EUR	=&gt; 1.57410180 ETH
+2019-09-09 16:14:52 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 16:14:52 (INFO):	2018-01-16 02:01:00: Paper trader simulated a SELL @ 1014.72 EUR 	1594.87666962 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:14:52 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:14:52 (INFO):	2018-01-16 02:48:00: Paper trader simulated a BUY @ 1013.23 EUR 		0.00000000 EUR	=&gt; 1.57169088 ETH
+2019-09-09 16:14:52 (INFO):	2018-01-16 03:20:00: Paper trader simulated a SELL (trailingStop 1.8815948051218419%) @ 1005.10 EUR 	1577.33694373 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:14:55 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:14:55 (INFO):	2018-01-16 09:17:00: Paper trader simulated a BUY @ 923.82 EUR 		0.00000000 EUR	=&gt; 1.70484611 ETH
+2019-09-09 16:14:55 (INFO):	2018-01-16 09:28:00: Paper trader simulated a SELL (trailingStop 2.2908265873278113%) @ 899.00 EUR 	1530.35766791 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:14:55 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:14:55 (INFO):	2018-01-16 09:48:00: Paper trader simulated a BUY @ 945.98 EUR 		0.00000000 EUR	=&gt; 1.61532181 ETH
+2019-09-09 16:14:55 (INFO):	2018-01-16 09:54:00: Paper trader simulated a SELL (trailingStop 1.509551928116306%) @ 912.02 EUR 	1470.99598846 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:14:56 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:14:56 (INFO):	2018-01-16 10:27:00: Paper trader simulated a BUY @ 883.64 EUR 		0.00000000 EUR	=&gt; 1.66220349 ETH
+2019-09-09 16:14:56 (INFO):	2018-01-16 10:32:00: Paper trader simulated a SELL (trailingStop 1.798093337476008%) @ 896.99 EUR 	1488.74343863 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:14:56 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:14:56 (INFO):	2018-01-16 10:54:00: Paper trader simulated a BUY @ 830.00 EUR 		0.00000000 EUR	=&gt; 1.79097629 ETH
+2019-09-09 16:14:56 (INFO):	2018-01-16 11:00:00: Paper trader simulated a SELL (trailingStop 1.2377388731119214%) @ 846.71 EUR 	1514.16287820 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:14:56 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:14:56 (INFO):	2018-01-16 11:03:00: Paper trader simulated a BUY @ 857.00 EUR 		0.00000000 EUR	=&gt; 1.76416760 ETH
+2019-09-09 16:14:56 (INFO):	2018-01-16 11:16:00: Paper trader simulated a SELL (trailingStop 2.3170559125176844%) @ 866.54 EUR 	1526.42870941 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:14:56 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:14:56 (INFO):	2018-01-16 11:22:00: Paper trader simulated a BUY @ 848.19 EUR 		0.00000000 EUR	=&gt; 1.79693119 ETH
+2019-09-09 16:14:56 (INFO):	2018-01-16 11:42:00: Paper trader simulated a SELL (trailingStop 1.7355421630175147%) @ 897.02 EUR 	1609.46539122 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:14:57 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:14:57 (INFO):	2018-01-16 13:27:00: Paper trader simulated a BUY @ 955.00 EUR 		0.00000000 EUR	=&gt; 1.68277611 ETH
+2019-09-09 16:14:57 (INFO):	2018-01-16 13:39:00: Paper trader simulated a SELL (trailingStop 1.7329931255296707%) @ 928.55 EUR 	1560.19794430 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:14:58 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:14:58 (INFO):	2018-01-16 15:07:00: Paper trader simulated a BUY @ 923.01 EUR 		0.00000000 EUR	=&gt; 1.68780148 ETH
+2019-09-09 16:14:58 (INFO):	2018-01-16 15:11:00: Paper trader simulated a SELL (trailingStop 1.3659848544412605%) @ 900.00 EUR 	1516.74280000 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:14:58 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:14:58 (INFO):	2018-01-16 15:14:00: Paper trader simulated a BUY @ 910.00 EUR 		0.00000000 EUR	=&gt; 1.66425020 ETH
+2019-09-09 16:14:58 (INFO):	2018-01-16 15:21:00: Paper trader simulated a SELL (trailingStop 1.1825922828264122%) @ 925.00 EUR 	1537.12228784 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:14:59 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:14:59 (INFO):	2018-01-16 16:43:00: Paper trader simulated a BUY @ 944.66 EUR 		0.00000000 EUR	=&gt; 1.62472911 ETH
+2019-09-09 16:14:59 (INFO):	2018-01-16 17:07:00: Paper trader simulated a SELL (trailingStop 1.7235361146274983%) @ 938.20 EUR 	1522.03436972 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:00 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:00 (INFO):	2018-01-16 19:10:00: Paper trader simulated a BUY @ 844.65 EUR 		0.00000000 EUR	=&gt; 1.79926752 ETH
+2019-09-09 16:15:00 (INFO):	2018-01-16 19:14:00: Paper trader simulated a SELL (trailingStop 2.023595717839105%) @ 863.37 EUR 	1551.10344834 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:00 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:00 (INFO):	2018-01-16 19:25:00: Paper trader simulated a BUY @ 875.10 EUR 		0.00000000 EUR	=&gt; 1.76982835 ETH
+2019-09-09 16:15:00 (INFO):	2018-01-16 19:30:00: Paper trader simulated a SELL (trailingStop 1.5588272940538301%) @ 872.70 EUR 	1542.21240724 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:00 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:00 (INFO):	2018-01-16 19:52:00: Paper trader simulated a BUY @ 869.55 EUR 		0.00000000 EUR	=&gt; 1.77091494 ETH
+2019-09-09 16:15:00 (INFO):	2018-01-16 20:15:00: Paper trader simulated a SELL (trailingStop 1.7856741660491025%) @ 905.00 EUR 	1600.27400366 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:01 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:01 (INFO):	2018-01-16 22:07:00: Paper trader simulated a BUY @ 848.98 EUR 		0.00000000 EUR	=&gt; 1.88210981 ETH
+2019-09-09 16:15:01 (INFO):	2018-01-16 22:15:00: Paper trader simulated a SELL (trailingStop 1.2209879161668318%) @ 837.00 EUR 	1572.96292210 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:02 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:02 (INFO):	2018-01-16 22:42:00: Paper trader simulated a BUY @ 777.90 EUR 		0.00000000 EUR	=&gt; 2.01903005 ETH
+2019-09-09 16:15:02 (INFO):	2018-01-16 22:53:00: Paper trader simulated a SELL (trailingStop 1.7216250311439882%) @ 791.94 EUR 	1596.55223181 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:02 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:02 (INFO):	2018-01-16 22:59:00: Paper trader simulated a BUY @ 782.80 EUR 		0.00000000 EUR	=&gt; 2.03648109 ETH
+2019-09-09 16:15:02 (INFO):	2018-01-16 23:04:00: Paper trader simulated a SELL (trailingStop 2.2992350930705263%) @ 758.73 EUR 	1542.82158846 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:02 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:02 (INFO):	2018-01-16 23:22:00: Paper trader simulated a BUY @ 733.00 EUR 		0.00000000 EUR	=&gt; 2.10164714 ETH
+2019-09-09 16:15:02 (INFO):	2018-01-16 23:29:00: Paper trader simulated a SELL (trailingStop 1.6989873836599119%) @ 710.99 EUR 	1492.00872491 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:02 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:02 (INFO):	2018-01-16 23:35:00: Paper trader simulated a BUY @ 735.20 EUR 		0.00000000 EUR	=&gt; 2.02634754 ETH
+2019-09-09 16:15:02 (INFO):	2018-01-16 23:42:00: Paper trader simulated a SELL (trailingStop 3.1371450768164335%) @ 790.00 EUR 	1598.41333476 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:02 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:02 (INFO):	2018-01-16 23:47:00: Paper trader simulated a BUY @ 820.00 EUR 		0.00000000 EUR	=&gt; 1.94636062 ETH
+2019-09-09 16:15:02 (INFO):	2018-01-17 00:02:00: Paper trader simulated a SELL (trailingStop 2.7298634512256985%) @ 838.70 EUR 	1629.96403301 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:02 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:02 (INFO):	2018-01-17 00:09:00: Paper trader simulated a BUY @ 815.00 EUR 		0.00000000 EUR	=&gt; 1.99695593 ETH
+2019-09-09 16:15:02 (INFO):	2018-01-17 00:31:00: Paper trader simulated a SELL (trailingStop 2.274662646924744%) @ 871.20 EUR 	1737.13838420 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:03 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:03 (INFO):	2018-01-17 00:52:00: Paper trader simulated a BUY @ 866.46 EUR 		0.00000000 EUR	=&gt; 2.00186122 ETH
+2019-09-09 16:15:03 (INFO):	2018-01-17 01:11:00: Paper trader simulated a SELL (trailingStop 1.4030514887503953%) @ 889.20 EUR 	1777.38491432 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:03 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:03 (INFO):	2018-01-17 01:17:00: Paper trader simulated a BUY @ 903.31 EUR 		0.00000000 EUR	=&gt; 1.96468414 ETH
+2019-09-09 16:15:03 (INFO):	2018-01-17 01:23:00: Paper trader simulated a SELL (trailingStop 1.1395218573096482%) @ 890.38 EUR 	1746.69149137 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:03 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:03 (INFO):	2018-01-17 01:43:00: Paper trader simulated a BUY @ 847.96 EUR 		0.00000000 EUR	=&gt; 2.05678505 ETH
+2019-09-09 16:15:03 (INFO):	2018-01-17 01:46:00: Paper trader simulated a SELL (trailingStop 1.2051308961995761%) @ 840.85 EUR 	1726.85353772 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:03 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:03 (INFO):	2018-01-17 02:05:00: Paper trader simulated a BUY @ 843.71 EUR 		0.00000000 EUR	=&gt; 2.04366815 ETH
+2019-09-09 16:15:03 (INFO):	2018-01-17 02:12:00: Paper trader simulated a SELL (trailingStop 1.3041940667255416%) @ 854.00 EUR 	1742.67466119 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:04 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:04 (INFO):	2018-01-17 02:37:00: Paper trader simulated a BUY @ 874.19 EUR 		0.00000000 EUR	=&gt; 1.99048336 ETH
+2019-09-09 16:15:04 (INFO):	2018-01-17 02:49:00: Paper trader simulated a SELL (trailingStop 1.641089321837298%) @ 855.40 EUR 	1700.10547694 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:04 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:04 (INFO):	2018-01-17 04:32:00: Paper trader simulated a BUY @ 785.21 EUR 		0.00000000 EUR	=&gt; 2.16191250 ETH
+2019-09-09 16:15:05 (INFO):	2018-01-17 05:01:00: Paper trader simulated a SELL (trailingStop 2.2394486480387505%) @ 798.77 EUR 	1724.28054135 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:05 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:05 (INFO):	2018-01-17 05:32:00: Paper trader simulated a BUY @ 812.00 EUR 		0.00000000 EUR	=&gt; 2.12031295 ETH
+2019-09-09 16:15:05 (INFO):	2018-01-17 05:52:00: Paper trader simulated a SELL (trailingStop 1.5887141176941109%) @ 825.34 EUR 	1747.35412151 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:07 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:07 (INFO):	2018-01-17 09:33:00: Paper trader simulated a BUY @ 813.44 EUR 		0.00000000 EUR	=&gt; 2.14488233 ETH
+2019-09-09 16:15:07 (INFO):	2018-01-17 09:48:00: Paper trader simulated a SELL (trailingStop 1.132923522056864%) @ 808.08 EUR 	1730.63665845 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:08 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:08 (INFO):	2018-01-17 11:29:00: Paper trader simulated a BUY @ 725.03 EUR 		0.00000000 EUR	=&gt; 2.38340579 ETH
+2019-09-09 16:15:08 (INFO):	2018-01-17 11:46:00: Paper trader simulated a SELL (trailingStop 1.9810450544760885%) @ 741.00 EUR 	1763.45453485 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:08 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:08 (INFO):	2018-01-17 12:05:00: Paper trader simulated a BUY @ 728.72 EUR 		0.00000000 EUR	=&gt; 2.41630441 ETH
+2019-09-09 16:15:08 (INFO):	2018-01-17 12:10:00: Paper trader simulated a SELL (trailingStop 1.9258576197313704%) @ 735.08 EUR 	1773.51278013 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:08 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:08 (INFO):	2018-01-17 12:12:00: Paper trader simulated a BUY @ 756.00 EUR 		0.00000000 EUR	=&gt; 2.34239750 ETH
+2019-09-09 16:15:08 (INFO):	2018-01-17 12:20:00: Paper trader simulated a SELL (trailingStop 1.1660910122189527%) @ 767.01 EUR 	1793.94734301 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:08 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:08 (INFO):	2018-01-17 13:05:00: Paper trader simulated a BUY @ 721.28 EUR 		0.00000000 EUR	=&gt; 2.48344113 ETH
+2019-09-09 16:15:09 (INFO):	2018-01-17 13:18:00: Paper trader simulated a SELL (trailingStop 1.5098368362453616%) @ 733.00 EUR 	1817.63180476 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:09 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:09 (INFO):	2018-01-17 15:12:00: Paper trader simulated a BUY @ 710.58 EUR 		0.00000000 EUR	=&gt; 2.55411826 ETH
+2019-09-09 16:15:09 (INFO):	2018-01-17 15:16:00: Paper trader simulated a SELL (trailingStop 1.7423605873130654%) @ 697.07 EUR 	1777.72861667 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:10 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:10 (INFO):	2018-01-17 15:43:00: Paper trader simulated a BUY @ 672.62 EUR 		0.00000000 EUR	=&gt; 2.63902652 ETH
+2019-09-09 16:15:10 (INFO):	2018-01-17 15:48:00: Paper trader simulated a SELL (trailingStop 2.1365994516918487%) @ 668.98 EUR 	1762.80777740 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:10 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:10 (INFO):	2018-01-17 16:02:00: Paper trader simulated a BUY @ 654.00 EUR 		0.00000000 EUR	=&gt; 2.69138159 ETH
+2019-09-09 16:15:10 (INFO):	2018-01-17 16:11:00: Paper trader simulated a SELL (trailingStop 1.6329148348845723%) @ 665.01 EUR 	1787.11097765 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:10 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:10 (INFO):	2018-01-17 16:37:00: Paper trader simulated a BUY @ 630.20 EUR 		0.00000000 EUR	=&gt; 2.83153016 ETH
+2019-09-09 16:15:10 (INFO):	2018-01-17 16:45:00: Paper trader simulated a SELL (trailingStop 1.3203642006460345%) @ 646.65 EUR 	1828.26246449 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:10 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:10 (INFO):	2018-01-17 17:08:00: Paper trader simulated a BUY @ 664.98 EUR 		0.00000000 EUR	=&gt; 2.74522552 ETH
+2019-09-09 16:15:10 (INFO):	2018-01-17 17:16:00: Paper trader simulated a SELL (trailingStop 1.48175864138681%) @ 670.52 EUR 	1837.96752274 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:10 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:10 (INFO):	2018-01-17 17:23:00: Paper trader simulated a BUY @ 678.43 EUR 		0.00000000 EUR	=&gt; 2.70508463 ETH
+2019-09-09 16:15:10 (INFO):	2018-01-17 17:30:00: Paper trader simulated a SELL (trailingStop 1.2384664692405982%) @ 694.34 EUR 	1875.43108930 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:12 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:12 (INFO):	2018-01-17 21:04:00: Paper trader simulated a BUY @ 750.00 EUR 		0.00000000 EUR	=&gt; 2.49682392 ETH
+2019-09-09 16:15:12 (INFO):	2018-01-17 21:12:00: Paper trader simulated a SELL (trailingStop 1.410962855054084%) @ 772.99 EUR 	1927.12489203 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:13 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:13 (INFO):	2018-01-17 22:07:00: Paper trader simulated a BUY @ 810.00 EUR 		0.00000000 EUR	=&gt; 2.37559778 ETH
+2019-09-09 16:15:13 (INFO):	2018-01-17 22:48:00: Paper trader simulated a SELL (trailingStop 1.2921571675117631%) @ 862.82 EUR 	2046.63870662 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:13 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:13 (INFO):	2018-01-17 23:27:00: Paper trader simulated a BUY @ 853.80 EUR 		0.00000000 EUR	=&gt; 2.39349818 ETH
+2019-09-09 16:15:13 (INFO):	2018-01-17 23:39:00: Paper trader simulated a SELL (trailingStop 1.9731641660527135%) @ 835.13 EUR 	1995.88381186 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:14 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:14 (INFO):	2018-01-17 23:47:00: Paper trader simulated a BUY @ 836.34 EUR 		0.00000000 EUR	=&gt; 2.38287058 ETH
+2019-09-09 16:15:14 (INFO):	2018-01-17 23:54:00: Paper trader simulated a SELL (trailingStop 1.5634573956897728%) @ 832.60 EUR 	1981.00207784 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:14 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:14 (INFO):	2018-01-18 00:15:00: Paper trader simulated a BUY @ 796.00 EUR 		0.00000000 EUR	=&gt; 2.48496303 ETH
+2019-09-09 16:15:14 (INFO):	2018-01-18 00:23:00: Paper trader simulated a SELL (trailingStop 1.9409898919902822%) @ 830.84 EUR 	2061.50977381 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:14 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:14 (INFO):	2018-01-18 00:37:00: Paper trader simulated a BUY @ 837.63 EUR 		0.00000000 EUR	=&gt; 2.45743049 ETH
+2019-09-09 16:15:14 (INFO):	2018-01-18 00:43:00: Paper trader simulated a SELL (trailingStop 1.2059343973776737%) @ 845.34 EUR 	2074.24824398 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:16 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:16 (INFO):	2018-01-18 05:02:00: Paper trader simulated a BUY @ 849.16 EUR 		0.00000000 EUR	=&gt; 2.43904196 ETH
+2019-09-09 16:15:16 (INFO):	2018-01-18 05:11:00: Paper trader simulated a SELL (trailingStop 1.4901759484819617%) @ 859.24 EUR 	2092.57883008 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:17 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:17 (INFO):	2018-01-18 06:23:00: Paper trader simulated a BUY @ 811.25 EUR 		0.00000000 EUR	=&gt; 2.57558084 ETH
+2019-09-09 16:15:17 (INFO):	2018-01-18 06:32:00: Paper trader simulated a SELL (trailingStop 1.937680457630539%) @ 826.32 EUR 	2125.06157876 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:22 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:22 (INFO):	2018-01-18 17:37:00: Paper trader simulated a BUY @ 901.00 EUR 		0.00000000 EUR	=&gt; 2.35502107 ETH
+2019-09-09 16:15:23 (INFO):	2018-01-18 18:24:00: Paper trader simulated a SELL (trailingStop 1.7025414315231302%) @ 892.86 EUR 	2099.55005639 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:25 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:25 (INFO):	2018-01-18 23:17:00: Paper trader simulated a BUY @ 846.96 EUR 		0.00000000 EUR	=&gt; 2.47520630 ETH
+2019-09-09 16:15:25 (INFO):	2018-01-18 23:50:00: Paper trader simulated a SELL (trailingStop 2.503758652592361%) @ 865.00 EUR 	2137.84186932 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:27 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:27 (INFO):	2018-01-19 04:22:00: Paper trader simulated a BUY @ 833.75 EUR 		0.00000000 EUR	=&gt; 2.56028198 ETH
+2019-09-09 16:15:28 (INFO):	2018-01-19 05:34:00: Paper trader simulated a SELL (trailingStop 1.7755474228332813%) @ 829.62 EUR 	2120.87504454 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:28 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:28 (INFO):	2018-01-19 05:44:00: Paper trader simulated a BUY @ 855.73 EUR 		0.00000000 EUR	=&gt; 2.47472185 ETH
+2019-09-09 16:15:29 (INFO):	2018-01-19 06:45:00: Paper trader simulated a SELL (trailingStop 1.7963926349288686%) @ 850.20 EUR 	2100.85250409 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:30 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:30 (INFO):	2018-01-19 09:08:00: Paper trader simulated a BUY @ 874.90 EUR 		0.00000000 EUR	=&gt; 2.39764684 ETH
+2019-09-09 16:15:30 (INFO):	2018-01-19 09:45:00: Paper trader simulated a SELL (trailingStop 2.126872707249702%) @ 897.16 EUR 	2147.84622971 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:15:40 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:15:40 (INFO):	2018-01-20 06:10:00: Paper trader simulated a BUY @ 907.40 EUR 		0.00000000 EUR	=&gt; 2.36348298 ETH
+2019-09-09 16:15:41 (INFO):	2018-01-20 07:41:00: Paper trader simulated a SELL (trailingStop 1.7782099337470902%) @ 904.16 EUR 	2133.76132104 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:16:07 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:16:07 (INFO):	2018-01-22 14:33:00: Paper trader simulated a BUY @ 818.00 EUR 		0.00000000 EUR	=&gt; 2.60459740 ETH
+2019-09-09 16:16:07 (INFO):	2018-01-22 14:42:00: Paper trader simulated a SELL (trailingStop 1.4127346917466717%) @ 807.45 EUR 	2099.92754737 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:16:07 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:16:07 (INFO):	2018-01-22 14:52:00: Paper trader simulated a BUY @ 810.02 EUR 		0.00000000 EUR	=&gt; 2.58855047 ETH
+2019-09-09 16:16:08 (INFO):	2018-01-22 15:06:00: Paper trader simulated a SELL (trailingStop 1.6601956430907534%) @ 820.00 EUR 	2119.42746832 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:16:08 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:16:08 (INFO):	2018-01-22 17:02:00: Paper trader simulated a BUY @ 797.67 EUR 		0.00000000 EUR	=&gt; 2.65303738 ETH
+2019-09-09 16:16:09 (INFO):	2018-01-22 17:37:00: Paper trader simulated a SELL (trailingStop 1.2923781387778894%) @ 808.99 EUR 	2143.06128898 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:16:11 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:16:11 (INFO):	2018-01-22 23:00:00: Paper trader simulated a BUY @ 782.00 EUR 		0.00000000 EUR	=&gt; 2.73637685 ETH
+2019-09-09 16:16:11 (INFO):	2018-01-22 23:14:00: Paper trader simulated a SELL (trailingStop 1.791469136300507%) @ 794.60 EUR 	2171.06355744 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:16:20 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:16:20 (INFO):	2018-01-23 17:28:00: Paper trader simulated a BUY @ 830.31 EUR 		0.00000000 EUR	=&gt; 2.61084048 ETH
+2019-09-09 16:16:20 (INFO):	2018-01-23 18:19:00: Paper trader simulated a SELL (trailingStop 1.632776965987471%) @ 822.00 EUR 	2142.89170824 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:16:50 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:16:50 (INFO):	2018-01-26 09:39:00: Paper trader simulated a BUY @ 817.00 EUR 		0.00000000 EUR	=&gt; 2.61894415 ETH
+2019-09-09 16:16:51 (INFO):	2018-01-26 10:07:00: Paper trader simulated a SELL (trailingStop 1.4586587887322289%) @ 815.03 EUR 	2131.31627349 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:17:12 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 16:17:12 (INFO):	2018-01-28 06:01:00: Paper trader simulated a BUY @ 913.01 EUR 		0.00000000 EUR	=&gt; 2.33088279 ETH
+2019-09-09 16:17:43 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 16:17:43 (INFO):	2018-01-30 20:01:00: Paper trader simulated a SELL @ 849.60 EUR 	1977.34754135 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:17:46 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:17:46 (INFO):	2018-01-31 02:13:00: Paper trader simulated a BUY @ 841.70 EUR 		0.00000000 EUR	=&gt; 2.34570692 ETH
+2019-09-09 16:17:46 (INFO):	2018-01-31 02:18:00: Paper trader simulated a SELL (trailingStop 1.1846458629917578%) @ 838.23 EUR 	1963.29254868 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:18:05 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:18:05 (INFO):	2018-02-01 17:42:00: Paper trader simulated a BUY @ 824.25 EUR 		0.00000000 EUR	=&gt; 2.37834104 ETH
+2019-09-09 16:18:05 (INFO):	2018-02-01 17:48:00: Paper trader simulated a SELL (trailingStop 1.0244870693471801%) @ 830.20 EUR 	1971.53698331 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:18:07 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:18:07 (INFO):	2018-02-01 21:24:00: Paper trader simulated a BUY @ 776.42 EUR 		0.00000000 EUR	=&gt; 2.53545719 ETH
+2019-09-09 16:18:07 (INFO):	2018-02-01 21:27:00: Paper trader simulated a SELL (trailingStop 1.0816061939858848%) @ 783.82 EUR 	1984.36104158 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:18:07 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:18:07 (INFO):	2018-02-01 21:29:00: Paper trader simulated a BUY @ 805.37 EUR 		0.00000000 EUR	=&gt; 2.46021642 ETH
+2019-09-09 16:18:07 (INFO):	2018-02-01 21:33:00: Paper trader simulated a SELL (trailingStop 1.4716973792659123%) @ 791.14 EUR 	1943.45605509 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:18:08 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:18:08 (INFO):	2018-02-01 22:19:00: Paper trader simulated a BUY @ 812.42 EUR 		0.00000000 EUR	=&gt; 2.38859317 ETH
+2019-09-09 16:18:08 (INFO):	2018-02-01 22:45:00: Paper trader simulated a SELL (trailingStop 1.147921308099766%) @ 821.44 EUR 	1959.14284460 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:18:14 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:18:14 (INFO):	2018-02-02 10:27:00: Paper trader simulated a BUY @ 685.00 EUR 		0.00000000 EUR	=&gt; 2.85577245 ETH
+2019-09-09 16:18:14 (INFO):	2018-02-02 10:32:00: Paper trader simulated a SELL (trailingStop 1.2438346714300224%) @ 675.00 EUR 	1924.75493414 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:18:28 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 16:18:28 (INFO):	2018-02-03 16:41:00: Paper trader simulated a BUY @ 778.99 EUR 		0.00000000 EUR	=&gt; 2.46712769 ETH
+2019-09-09 16:18:29 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 16:18:29 (INFO):	2018-02-03 18:16:00: Paper trader simulated a SELL @ 786.06 EUR 	1936.40142641 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:18:29 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 16:18:29 (INFO):	2018-02-03 19:16:00: Paper trader simulated a BUY @ 780.01 EUR 		0.00000000 EUR	=&gt; 2.47881030 ETH
+2019-09-09 16:18:30 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 16:18:30 (INFO):	2018-02-03 20:11:00: Paper trader simulated a SELL @ 789.05 EUR 	1952.97140931 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:18:30 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:18:30 (INFO):	2018-02-03 20:13:00: Paper trader simulated a BUY @ 788.16 EUR 		0.00000000 EUR	=&gt; 2.47417015 ETH
+2019-09-09 16:18:31 (INFO):	2018-02-03 21:37:00: Paper trader simulated a SELL (trailingStop 1.111528711456615%) @ 787.29 EUR 	1944.96758326 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:18:49 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:18:49 (INFO):	2018-02-05 13:03:00: Paper trader simulated a BUY @ 613.52 EUR 		0.00000000 EUR	=&gt; 3.16542269 ETH
+2019-09-09 16:18:49 (INFO):	2018-02-05 13:12:00: Paper trader simulated a SELL (trailingStop 1.2448127434985476%) @ 605.11 EUR 	1912.55578055 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:18:53 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:18:53 (INFO):	2018-02-05 19:37:00: Paper trader simulated a BUY @ 560.88 EUR 		0.00000000 EUR	=&gt; 3.40480485 ETH
+2019-09-09 16:18:53 (INFO):	2018-02-05 19:43:00: Paper trader simulated a SELL (trailingStop 1.031526763200199%) @ 554.00 EUR 	1883.43249406 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:18:53 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:18:53 (INFO):	2018-02-05 21:04:00: Paper trader simulated a BUY @ 518.15 EUR 		0.00000000 EUR	=&gt; 3.62946510 ETH
+2019-09-09 16:18:53 (INFO):	2018-02-05 21:09:00: Paper trader simulated a SELL (trailingStop 2.176508820992391%) @ 534.70 EUR 	1937.76397648 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:18:53 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:18:53 (INFO):	2018-02-05 21:29:00: Paper trader simulated a BUY @ 564.09 EUR 		0.00000000 EUR	=&gt; 3.43005075 ETH
+2019-09-09 16:18:54 (INFO):	2018-02-05 21:39:00: Paper trader simulated a SELL (trailingStop 1.6433696781189384%) @ 590.00 EUR 	2020.69434758 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:18:54 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:18:54 (INFO):	2018-02-05 21:43:00: Paper trader simulated a BUY @ 579.13 EUR 		0.00000000 EUR	=&gt; 3.48395577 ETH
+2019-09-09 16:18:54 (INFO):	2018-02-05 21:51:00: Paper trader simulated a SELL (trailingStop 1.6052590390707895%) @ 591.10 EUR 	2056.27720626 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:18:54 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:18:54 (INFO):	2018-02-05 22:07:00: Paper trader simulated a BUY @ 554.61 EUR 		0.00000000 EUR	=&gt; 3.70204790 ETH
+2019-09-09 16:18:54 (INFO):	2018-02-05 22:12:00: Paper trader simulated a SELL (trailingStop 1.4984292494734581%) @ 544.20 EUR 	2011.63248547 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:18:54 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:18:54 (INFO):	2018-02-05 22:23:00: Paper trader simulated a BUY @ 569.68 EUR 		0.00000000 EUR	=&gt; 3.52586546 ETH
+2019-09-09 16:18:54 (INFO):	2018-02-05 22:32:00: Paper trader simulated a SELL (trailingStop 1.3594900999747392%) @ 586.99 EUR 	2066.54329471 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:18:55 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:18:55 (INFO):	2018-02-06 00:05:00: Paper trader simulated a BUY @ 539.36 EUR 		0.00000000 EUR	=&gt; 3.82572582 ETH
+2019-09-09 16:18:55 (INFO):	2018-02-06 00:17:00: Paper trader simulated a SELL (trailingStop 1.3060195491790938%) @ 544.43 EUR 	2079.71564832 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:18:58 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:18:58 (INFO):	2018-02-06 06:38:00: Paper trader simulated a BUY @ 492.09 EUR 		0.00000000 EUR	=&gt; 4.21995178 ETH
+2019-09-09 16:18:58 (INFO):	2018-02-06 06:42:00: Paper trader simulated a SELL (trailingStop 1.1379773110999911%) @ 505.70 EUR 	2130.82857072 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:18:58 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:18:58 (INFO):	2018-02-06 06:42:00: Paper trader simulated a BUY @ 502.00 EUR 		0.00000000 EUR	=&gt; 4.23831141 ETH
+2019-09-09 16:18:58 (INFO):	2018-02-06 06:46:00: Paper trader simulated a SELL (trailingStop 1.182919792845684%) @ 490.54 EUR 	2075.94268714 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:19:00 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:19:00 (INFO):	2018-02-06 10:12:00: Paper trader simulated a BUY @ 484.06 EUR 		0.00000000 EUR	=&gt; 4.28217322 ETH
+2019-09-09 16:19:00 (INFO):	2018-02-06 10:18:00: Paper trader simulated a SELL (trailingStop 1.2859613648431343%) @ 480.51 EUR 	2054.54061336 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:19:00 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:19:00 (INFO):	2018-02-06 10:25:00: Paper trader simulated a BUY @ 484.99 EUR 		0.00000000 EUR	=&gt; 4.22989917 ETH
+2019-09-09 16:19:00 (INFO):	2018-02-06 10:30:00: Paper trader simulated a SELL (trailingStop 2.0114692193794346%) @ 494.68 EUR 	2089.30785163 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:19:00 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:19:00 (INFO):	2018-02-06 10:33:00: Paper trader simulated a BUY @ 506.00 EUR 		0.00000000 EUR	=&gt; 4.12287330 ETH
+2019-09-09 16:19:00 (INFO):	2018-02-06 10:38:00: Paper trader simulated a SELL (trailingStop 1.515983830498232%) @ 515.00 EUR 	2120.09482987 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:19:00 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:19:00 (INFO):	2018-02-06 10:54:00: Paper trader simulated a BUY @ 519.14 EUR 		0.00000000 EUR	=&gt; 4.07773372 ETH
+2019-09-09 16:19:00 (INFO):	2018-02-06 10:57:00: Paper trader simulated a SELL (trailingStop 1.580635758531444%) @ 509.42 EUR 	2074.16319297 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:19:01 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:19:01 (INFO):	2018-02-06 13:37:00: Paper trader simulated a BUY @ 510.05 EUR 		0.00000000 EUR	=&gt; 4.06048808 ETH
+2019-09-09 16:19:01 (INFO):	2018-02-06 13:42:00: Paper trader simulated a SELL (trailingStop 1.2914017335217889%) @ 500.00 EUR 	2027.19867393 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:19:02 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:19:02 (INFO):	2018-02-06 14:40:00: Paper trader simulated a BUY @ 552.78 EUR 		0.00000000 EUR	=&gt; 3.66177842 ETH
+2019-09-09 16:19:02 (INFO):	2018-02-06 14:55:00: Paper trader simulated a SELL (trailingStop 1.4043728025665763%) @ 576.23 EUR 	2106.86153908 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:19:02 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:19:02 (INFO):	2018-02-06 14:58:00: Paper trader simulated a BUY @ 576.13 EUR 		0.00000000 EUR	=&gt; 3.65143500 ETH
+2019-09-09 16:19:02 (INFO):	2018-02-06 15:04:00: Paper trader simulated a SELL (trailingStop 1.5405399334750398%) @ 581.82 EUR 	2121.29119483 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:19:02 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:19:02 (INFO):	2018-02-06 15:50:00: Paper trader simulated a BUY @ 570.00 EUR 		0.00000000 EUR	=&gt; 3.71598115 ETH
+2019-09-09 16:19:02 (INFO):	2018-02-06 15:53:00: Paper trader simulated a SELL (trailingStop 1.015837346354806%) @ 574.32 EUR 	2130.96105062 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:19:02 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:19:02 (INFO):	2018-02-06 16:15:00: Paper trader simulated a BUY @ 586.97 EUR 		0.00000000 EUR	=&gt; 3.62499720 ETH
+2019-09-09 16:19:03 (INFO):	2018-02-06 16:28:00: Paper trader simulated a SELL (trailingStop 1.303943605696014%) @ 612.00 EUR 	2215.17053897 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:19:03 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:19:03 (INFO):	2018-02-06 16:53:00: Paper trader simulated a BUY @ 602.85 EUR 		0.00000000 EUR	=&gt; 3.66898529 ETH
+2019-09-09 16:19:03 (INFO):	2018-02-06 16:57:00: Paper trader simulated a SELL (trailingStop 1.2121273796596688%) @ 599.30 EUR 	2195.52464997 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:19:04 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:19:04 (INFO):	2018-02-06 18:52:00: Paper trader simulated a BUY @ 563.14 EUR 		0.00000000 EUR	=&gt; 3.89287097 ETH
+2019-09-09 16:19:04 (INFO):	2018-02-06 19:03:00: Paper trader simulated a SELL (trailingStop 1.242219709446946%) @ 574.20 EUR 	2231.93358120 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:19:05 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 16:19:05 (INFO):	2018-02-06 21:01:00: Paper trader simulated a BUY @ 611.00 EUR 		0.00000000 EUR	=&gt; 3.64743973 ETH
+2019-09-09 16:21:24 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 16:21:24 (INFO):	2018-02-18 08:01:00: Paper trader simulated a SELL @ 754.00 EUR 	2746.04430208 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:21:24 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:21:24 (INFO):	2018-02-18 08:03:00: Paper trader simulated a BUY @ 754.00 EUR 		0.00000000 EUR	=&gt; 3.63650561 ETH
+2019-09-09 16:21:40 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 16:21:40 (DEBUG):	Got advice to go long again - skip this double advice!
+2019-09-09 16:21:44 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 16:21:44 (INFO):	2018-02-20 00:06:00: Paper trader simulated a SELL @ 754.14 EUR 	2738.32068921 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:25:13 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 16:25:13 (INFO):	2018-03-10 03:46:00: Paper trader simulated a BUY @ 597.32 EUR 		0.00000000 EUR	=&gt; 4.57746803 ETH
+2019-09-09 16:25:14 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 16:25:14 (INFO):	2018-03-10 05:46:00: Paper trader simulated a SELL @ 597.70 EUR 	2731.84871256 EUR &lt;= 0.00000000 ETH
+
+2019-09-09 16:26:01 (INFO):	*** T5 optimizer: Changing RSI thresholds to 63 / 34
+
+2019-09-09 16:27:17 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 16:27:17 (INFO):	2018-03-20 21:01:00: Paper trader simulated a BUY @ 459.22 EUR 		0.00000000 EUR	=&gt; 5.93996546 ETH
+2019-09-09 16:27:38 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 16:27:38 (INFO):	2018-03-22 13:01:00: Paper trader simulated a SELL @ 435.00 EUR 	2580.00914763 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:29:54 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 16:29:54 (INFO):	2018-04-03 07:01:00: Paper trader simulated a BUY @ 322.20 EUR 		0.00000000 EUR	=&gt; 7.99546596 ETH
+2019-09-09 16:30:09 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 16:30:09 (INFO):	2018-04-04 12:01:00: Paper trader simulated a SELL @ 318.49 EUR 	2542.65623966 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:30:41 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 16:30:41 (INFO):	2018-04-07 06:01:00: Paper trader simulated a BUY @ 310.64 EUR 		0.00000000 EUR	=&gt; 8.17294055 ETH
+2019-09-09 16:31:50 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 16:31:50 (INFO):	2018-04-12 19:36:00: Paper trader simulated a SELL @ 374.84 EUR 	3058.94971820 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:31:54 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 16:31:54 (INFO):	2018-04-13 04:11:00: Paper trader simulated a BUY @ 397.03 EUR 		0.00000000 EUR	=&gt; 7.69302393 ETH
+2019-09-09 16:31:54 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 16:31:54 (INFO):	2018-04-13 04:31:00: Paper trader simulated a SELL @ 399.52 EUR 	3068.90664513 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:31:57 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 16:31:57 (INFO):	2018-04-13 11:46:00: Paper trader simulated a BUY @ 419.23 EUR 		0.00000000 EUR	=&gt; 7.30936069 ETH
+2019-09-09 16:31:58 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 16:31:58 (INFO):	2018-04-13 13:26:00: Paper trader simulated a SELL @ 422.89 EUR 	3086.41895888 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:31:59 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 16:31:59 (INFO):	2018-04-13 14:21:00: Paper trader simulated a BUY @ 421.89 EUR 		0.00000000 EUR	=&gt; 7.30472239 ETH
+2019-09-09 16:31:59 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 16:31:59 (INFO):	2018-04-13 15:01:00: Paper trader simulated a SELL @ 427.87 EUR 	3120.78336165 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:32:22 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:32:22 (INFO):	2018-04-15 13:07:00: Paper trader simulated a BUY @ 424.40 EUR 		0.00000000 EUR	=&gt; 7.34237084 ETH
+2019-09-09 16:32:22 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 16:32:22 (DEBUG):	Got advice to go long again - skip this double advice!
+2019-09-09 16:32:23 (INFO):	2018-04-15 15:46:00: Paper trader simulated a SELL (trailingStop 1.429588413557942%) @ 431.06 EUR 	3160.25487072 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:32:23 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 16:32:23 (INFO):	2018-04-15 16:01:00: Paper trader simulated a BUY @ 430.60 EUR 		0.00000000 EUR	=&gt; 7.32818041 ETH
+2019-09-09 16:34:22 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 16:34:22 (INFO):	2018-04-25 07:01:00: Paper trader simulated a SELL @ 528.16 EUR 	3864.64608769 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:34:42 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 16:34:42 (INFO):	2018-04-27 01:01:00: Paper trader simulated a BUY @ 544.00 EUR 		0.00000000 EUR	=&gt; 7.09347264 ETH
+2019-09-09 16:36:38 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 16:36:38 (INFO):	2018-05-06 11:01:00: Paper trader simulated a SELL @ 642.53 EUR 	4550.93232191 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:37:23 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 16:37:23 (INFO):	2018-05-10 07:01:00: Paper trader simulated a BUY @ 640.92 EUR 		0.00000000 EUR	=&gt; 7.08997366 ETH
+2019-09-09 16:37:31 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 16:37:31 (INFO):	2018-05-10 22:01:00: Paper trader simulated a SELL @ 615.81 EUR 	4359.52756454 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:38:00 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:38:00 (INFO):	2018-05-13 11:29:00: Paper trader simulated a BUY @ 582.16 EUR 		0.00000000 EUR	=&gt; 7.47730567 ETH
+2019-09-09 16:38:00 (INFO):	2018-05-13 12:37:00: Paper trader simulated a SELL (trailingStop 1.0769897730834712%) @ 580.04 EUR 	4330.63067625 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:38:04 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 16:38:04 (INFO):	2018-05-13 19:46:00: Paper trader simulated a BUY @ 606.00 EUR 		0.00000000 EUR	=&gt; 7.13553585 ETH
+2019-09-09 16:38:05 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 16:38:05 (INFO):	2018-05-13 21:01:00: Paper trader simulated a SELL @ 613.86 EUR 	4373.64970682 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:38:05 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 16:38:05 (INFO):	2018-05-13 22:21:00: Paper trader simulated a BUY @ 612.85 EUR 		0.00000000 EUR	=&gt; 7.12586967 ETH
+2019-09-09 16:38:05 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 16:38:05 (INFO):	2018-05-13 22:51:00: Paper trader simulated a SELL @ 617.99 EUR 	4397.11062306 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:38:13 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:38:13 (INFO):	2018-05-14 15:53:00: Paper trader simulated a BUY @ 600.00 EUR 		0.00000000 EUR	=&gt; 7.31752492 ETH
+2019-09-09 16:38:14 (INFO):	2018-05-14 15:59:00: Paper trader simulated a SELL (trailingStop 1.0892451033710215%) @ 603.55 EUR 	4409.86742721 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:38:35 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:38:35 (INFO):	2018-05-16 12:17:00: Paper trader simulated a BUY @ 596.25 EUR 		0.00000000 EUR	=&gt; 7.38491006 ETH
+2019-09-09 16:38:37 (INFO):	2018-05-16 15:19:00: Paper trader simulated a SELL (trailingStop 1.4694063636115497%) @ 589.90 EUR 	4349.82390672 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:38:57 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:38:57 (INFO):	2018-05-18 09:25:00: Paper trader simulated a BUY @ 571.80 EUR 		0.00000000 EUR	=&gt; 7.59583625 ETH
+2019-09-09 16:38:59 (INFO):	2018-05-18 12:17:00: Paper trader simulated a SELL (trailingStop 1.371330787955006%) @ 577.58 EUR 	4380.62229662 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:40:10 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:40:10 (INFO):	2018-05-24 14:49:00: Paper trader simulated a BUY @ 490.19 EUR 		0.00000000 EUR	=&gt; 8.92317542 ETH
+2019-09-09 16:40:10 (INFO):	2018-05-24 14:59:00: Paper trader simulated a SELL (trailingStop 1.722998419012916%) @ 497.28 EUR 	4430.66069784 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:42:05 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 16:42:05 (INFO):	2018-06-03 09:01:00: Paper trader simulated a BUY @ 517.83 EUR 		0.00000000 EUR	=&gt; 8.54337274 ETH
+2019-09-09 16:42:20 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 16:42:20 (INFO):	2018-06-04 14:01:00: Paper trader simulated a SELL @ 504.90 EUR 	4307.07857308 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:44:07 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:44:07 (INFO):	2018-06-13 18:33:00: Paper trader simulated a BUY @ 390.93 EUR 		0.00000000 EUR	=&gt; 11.00099239 ETH
+2019-09-09 16:44:07 (INFO):	2018-06-13 18:36:00: Paper trader simulated a SELL (trailingStop 1.1520996782993307%) @ 394.12 EUR 	4329.20755406 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:44:21 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 16:44:21 (INFO):	2018-06-14 23:36:00: Paper trader simulated a BUY @ 448.80 EUR 		0.00000000 EUR	=&gt; 9.63171511 ETH
+2019-09-09 16:44:22 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 16:44:22 (INFO):	2018-06-15 02:16:00: Paper trader simulated a SELL @ 449.94 EUR 	4327.19335574 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:44:23 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 16:44:23 (INFO):	2018-06-15 02:56:00: Paper trader simulated a BUY @ 447.07 EUR 		0.00000000 EUR	=&gt; 9.66448781 ETH
+2019-09-09 16:44:24 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 16:44:24 (INFO):	2018-06-15 05:36:00: Paper trader simulated a SELL @ 443.82 EUR 	4282.85904036 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:44:42 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:44:42 (INFO):	2018-06-16 18:47:00: Paper trader simulated a BUY @ 433.00 EUR 		0.00000000 EUR	=&gt; 9.87629272 ETH
+2019-09-09 16:44:43 (INFO):	2018-06-16 19:36:00: Paper trader simulated a SELL (trailingStop 1.1841989585748292%) @ 427.82 EUR 	4218.93763814 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:45:06 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:45:06 (INFO):	2018-06-18 18:28:00: Paper trader simulated a BUY @ 437.62 EUR 		0.00000000 EUR	=&gt; 9.62618077 ETH
+2019-09-09 16:45:06 (INFO):	2018-06-18 18:49:00: Paper trader simulated a SELL (trailingStop 1.289699978572374%) @ 444.12 EUR 	4268.76663446 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:45:15 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 16:45:15 (INFO):	2018-06-19 13:01:00: Paper trader simulated a BUY @ 454.93 EUR 		0.00000000 EUR	=&gt; 9.36927326 ETH
+2019-09-09 16:45:16 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 16:45:16 (INFO):	2018-06-19 15:21:00: Paper trader simulated a SELL @ 467.77 EUR 	4376.09095540 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:45:16 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 16:45:16 (INFO):	2018-06-19 16:01:00: Paper trader simulated a BUY @ 461.50 EUR 		0.00000000 EUR	=&gt; 9.46809711 ETH
+2019-09-09 16:45:20 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 16:45:20 (INFO):	2018-06-19 22:06:00: Paper trader simulated a SELL @ 466.00 EUR 	4405.51505338 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:46:17 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:46:17 (INFO):	2018-06-24 18:44:00: Paper trader simulated a BUY @ 389.90 EUR 		0.00000000 EUR	=&gt; 11.28214101 ETH
+2019-09-09 16:46:17 (INFO):	2018-06-24 18:50:00: Paper trader simulated a SELL (trailingStop 1.2987158914544887%) @ 392.67 EUR 	4423.51307293 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:46:27 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:46:27 (INFO):	2018-06-25 16:28:00: Paper trader simulated a BUY @ 403.96 EUR 		0.00000000 EUR	=&gt; 10.93394841 ETH
+2019-09-09 16:46:27 (INFO):	2018-06-25 16:38:00: Paper trader simulated a SELL (trailingStop 1.1009404343283595%) @ 398.60 EUR 	4351.73442847 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:47:22 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 16:47:22 (INFO):	2018-06-30 09:06:00: Paper trader simulated a BUY @ 384.47 EUR 		0.00000000 EUR	=&gt; 11.30180983 ETH
+2019-09-09 16:47:24 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 16:47:24 (INFO):	2018-06-30 11:46:00: Paper trader simulated a SELL @ 388.09 EUR 	4379.54019785 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:47:51 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 16:47:51 (INFO):	2018-07-02 18:46:00: Paper trader simulated a BUY @ 407.16 EUR 		0.00000000 EUR	=&gt; 10.74017803 ETH
+2019-09-09 16:47:52 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 16:47:52 (INFO):	2018-07-02 21:01:00: Paper trader simulated a SELL @ 410.00 EUR 	4396.86778281 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:50:46 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:50:46 (INFO):	2018-07-17 19:39:00: Paper trader simulated a BUY @ 411.01 EUR 		0.00000000 EUR	=&gt; 10.68166828 ETH
+2019-09-09 16:50:46 (INFO):	2018-07-17 19:47:00: Paper trader simulated a SELL (trailingStop 1.6801368853830025%) @ 419.13 EUR 	4470.29211475 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:50:46 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 16:50:46 (INFO):	2018-07-17 20:04:00: Paper trader simulated a BUY @ 434.40 EUR 		0.00000000 EUR	=&gt; 10.27529161 ETH
+2019-09-09 16:50:46 (INFO):	2018-07-17 20:30:00: Paper trader simulated a SELL (trailingStop 1.3805288025122548%) @ 431.14 EUR 	4423.44409089 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:50:47 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 16:50:47 (INFO):	2018-07-17 21:56:00: Paper trader simulated a BUY @ 428.38 EUR 		0.00000000 EUR	=&gt; 10.31049284 ETH
+2019-09-09 16:50:48 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 16:50:48 (INFO):	2018-07-17 23:41:00: Paper trader simulated a SELL @ 430.55 EUR 	4432.52391822 EUR &lt;= 0.00000000 ETH
+2019-09-09 16:56:24 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 16:56:24 (INFO):	2018-08-15 18:01:00: Paper trader simulated a BUY @ 261.99 EUR 		0.00000000 EUR	=&gt; 16.89329795 ETH
+2019-09-09 16:57:02 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 16:57:02 (INFO):	2018-08-18 18:01:00: Paper trader simulated a SELL @ 253.29 EUR 	4272.48508259 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:01:57 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 17:01:57 (INFO):	2018-09-13 03:01:00: Paper trader simulated a BUY @ 164.57 EUR 		0.00000000 EUR	=&gt; 25.92256398 ETH
+2019-09-09 17:02:54 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 17:02:54 (INFO):	2018-09-17 18:01:00: Paper trader simulated a SELL @ 177.68 EUR 	4599.01228621 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:03:32 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 17:03:32 (INFO):	2018-09-21 01:01:00: Paper trader simulated a BUY @ 189.32 EUR 		0.00000000 EUR	=&gt; 24.25583016 ETH
+2019-09-09 17:04:02 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 17:04:02 (INFO):	2018-09-23 09:46:00: Paper trader simulated a SELL @ 204.34 EUR 	4949.00168039 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:04:56 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 17:04:56 (INFO):	2018-09-28 01:01:00: Paper trader simulated a BUY @ 195.70 EUR 		0.00000000 EUR	=&gt; 25.25078271 ETH
+2019-09-09 17:04:57 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 17:04:57 (INFO):	2018-09-28 02:11:00: Paper trader simulated a SELL @ 197.70 EUR 	4984.59162215 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:05:14 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 17:05:14 (INFO):	2018-09-29 12:31:00: Paper trader simulated a BUY @ 198.68 EUR 		0.00000000 EUR	=&gt; 25.05090967 ETH
+2019-09-09 17:05:14 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 17:05:14 (INFO):	2018-09-29 13:41:00: Paper trader simulated a SELL @ 201.34 EUR 	5036.18452772 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:08:19 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 17:08:19 (INFO):	2018-10-15 09:26:00: Paper trader simulated a BUY @ 176.58 EUR 		0.00000000 EUR	=&gt; 28.47791511 ETH
+2019-09-09 17:08:21 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 17:08:21 (INFO):	2018-10-15 12:16:00: Paper trader simulated a SELL @ 176.01 EUR 	5004.87924175 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:12:18 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 17:12:18 (INFO):	2018-11-04 20:41:00: Paper trader simulated a BUY @ 185.50 EUR 		0.00000000 EUR	=&gt; 26.94001036 ETH
+2019-09-09 17:12:19 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 17:12:19 (INFO):	2018-11-04 22:36:00: Paper trader simulated a SELL @ 184.49 EUR 	4962.70726754 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:14:13 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 17:14:13 (INFO):	2018-11-14 17:34:00: Paper trader simulated a BUY @ 157.00 EUR 		0.00000000 EUR	=&gt; 31.56218602 ETH
+2019-09-09 17:14:13 (INFO):	2018-11-14 17:42:00: Paper trader simulated a SELL (trailingStop 1.8296466376043656%) @ 159.70 EUR 	5032.92038573 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:16:48 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 17:16:48 (INFO):	2018-11-28 00:01:00: Paper trader simulated a BUY @ 98.05 EUR 		0.00000000 EUR	=&gt; 51.25314640 ETH
+2019-09-09 17:17:53 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 17:17:53 (INFO):	2018-12-03 04:01:00: Paper trader simulated a SELL @ 98.56 EUR 	5043.93284402 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:20:41 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 17:20:41 (INFO):	2018-12-17 14:01:00: Paper trader simulated a BUY @ 79.60 EUR 		0.00000000 EUR	=&gt; 63.27094151 ETH
+2019-09-09 17:21:20 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 17:21:20 (INFO):	2018-12-20 18:06:00: Paper trader simulated a SELL @ 102.00 EUR 	6443.95557996 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:21:20 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 17:21:20 (INFO):	2018-12-20 19:11:00: Paper trader simulated a BUY @ 99.99 EUR 		0.00000000 EUR	=&gt; 64.34933139 ETH
+2019-09-09 17:21:22 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 17:21:22 (INFO):	2018-12-20 23:06:00: Paper trader simulated a SELL @ 100.33 EUR 	6446.48416573 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:21:47 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 17:21:47 (INFO):	2018-12-23 01:01:00: Paper trader simulated a BUY @ 102.97 EUR 		0.00000000 EUR	=&gt; 62.51155132 ETH
+2019-09-09 17:22:13 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 17:22:13 (INFO):	2018-12-25 05:01:00: Paper trader simulated a SELL @ 109.30 EUR 	6822.26379043 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:22:54 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 17:22:54 (INFO):	2018-12-28 16:38:00: Paper trader simulated a BUY @ 111.54 EUR 		0.00000000 EUR	=&gt; 61.07253357 ETH
+2019-09-09 17:22:54 (INFO):	2018-12-28 16:48:00: Paper trader simulated a SELL (trailingStop 1.303528870816321%) @ 112.32 EUR 	6849.37747012 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:22:55 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 17:22:55 (INFO):	2018-12-28 18:01:00: Paper trader simulated a BUY @ 116.96 EUR 		0.00000000 EUR	=&gt; 58.47386631 ETH
+2019-09-09 17:23:32 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 17:23:32 (INFO):	2018-12-31 21:01:00: Paper trader simulated a SELL @ 115.01 EUR 	6714.99174526 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:23:45 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 17:23:45 (INFO):	2019-01-01 22:01:00: Paper trader simulated a BUY @ 121.80 EUR 		0.00000000 EUR	=&gt; 55.04859817 ETH
+2019-09-09 17:24:36 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 17:24:36 (INFO):	2019-01-06 03:01:00: Paper trader simulated a SELL @ 130.89 EUR 	7194.50304794 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:24:44 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 17:24:44 (INFO):	2019-01-06 18:18:00: Paper trader simulated a BUY @ 139.29 EUR 		0.00000000 EUR	=&gt; 51.57377624 ETH
+2019-09-09 17:24:44 (INFO):	2019-01-06 18:46:00: Paper trader simulated a SELL (trailingStop 1.1985427367284651%) @ 138.02 EUR 	7107.53527774 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:26:16 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 17:26:16 (INFO):	2019-01-14 16:37:00: Paper trader simulated a BUY @ 108.00 EUR 		0.00000000 EUR	=&gt; 65.71179606 ETH
+2019-09-09 17:26:16 (INFO):	2019-01-14 16:48:00: Paper trader simulated a SELL (trailingStop 1.0941766179684231%) @ 110.00 EUR 	7217.45512025 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:31:09 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 17:31:09 (INFO):	2019-02-08 20:06:00: Paper trader simulated a BUY @ 104.11 EUR 		0.00000000 EUR	=&gt; 69.22129418 ETH
+2019-09-09 17:31:12 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 17:31:12 (INFO):	2019-02-09 01:01:00: Paper trader simulated a SELL @ 104.23 EUR 	7204.11308914 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:32:56 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 17:32:56 (INFO):	2019-02-17 23:02:00: Paper trader simulated a BUY @ 115.05 EUR 		0.00000000 EUR	=&gt; 62.52331090 ETH
+2019-09-09 17:34:20 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 17:34:20 (INFO):	2019-02-24 16:01:00: Paper trader simulated a SELL @ 124.24 EUR 	7756.24430199 EUR &lt;= 0.00000000 ETH
+
+2019-09-09 17:35:12 (INFO):	*** T5 optimizer: Changing RSI thresholds to 59 / 33
+
+2019-09-09 17:36:06 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 17:36:07 (INFO):	2019-03-05 15:56:00: Paper trader simulated a BUY @ 117.76 EUR 		0.00000000 EUR	=&gt; 65.76604904 ETH
+2019-09-09 17:36:07 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 17:36:07 (INFO):	2019-03-05 17:46:00: Paper trader simulated a SELL @ 120.57 EUR 	7917.51841395 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:36:08 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 17:36:08 (INFO):	2019-03-05 19:31:00: Paper trader simulated a BUY @ 120.25 EUR 		0.00000000 EUR	=&gt; 65.74338574 ETH
+2019-09-09 17:36:09 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 17:36:09 (INFO):	2019-03-05 21:01:00: Paper trader simulated a SELL @ 120.64 EUR 	7919.38513259 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:41:32 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 17:41:32 (INFO):	2019-04-02 06:34:00: Paper trader simulated a BUY @ 128.10 EUR 		0.00000000 EUR	=&gt; 61.72916514 ETH
+2019-09-09 17:41:32 (INFO):	2019-04-02 06:42:00: Paper trader simulated a SELL (trailingStop 1.508645409938011%) @ 130.41 EUR 	8038.02527526 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:41:32 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 17:41:32 (INFO):	2019-04-02 06:52:00: Paper trader simulated a BUY @ 135.00 EUR 		0.00000000 EUR	=&gt; 59.45161657 ETH
+2019-09-09 17:41:32 (INFO):	2019-04-02 06:56:00: Paper trader simulated a SELL (trailingStop 1.3430552623192882%) @ 136.49 EUR 	8102.37931892 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:41:33 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 17:41:33 (INFO):	2019-04-02 07:18:00: Paper trader simulated a BUY @ 137.45 EUR 		0.00000000 EUR	=&gt; 58.85940887 ETH
+2019-09-09 17:41:33 (INFO):	2019-04-02 07:27:00: Paper trader simulated a SELL (trailingStop 1.4791231631338124%) @ 136.69 EUR 	8033.42435954 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:41:33 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 17:41:33 (INFO):	2019-04-02 08:16:00: Paper trader simulated a BUY @ 134.27 EUR 		0.00000000 EUR	=&gt; 59.74062875 ETH
+2019-09-09 17:41:34 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 17:41:34 (INFO):	2019-04-02 10:26:00: Paper trader simulated a SELL @ 136.39 EUR 	8135.80231867 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:41:41 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 17:41:41 (INFO):	2019-04-03 00:01:00: Paper trader simulated a BUY @ 142.98 EUR 		0.00000000 EUR	=&gt; 56.81632826 ETH
+2019-09-09 17:43:23 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 17:43:23 (INFO):	2019-04-11 06:01:00: Paper trader simulated a SELL @ 150.15 EUR 	8518.17523070 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:45:45 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 17:45:45 (INFO):	2019-04-23 06:25:00: Paper trader simulated a BUY @ 155.88 EUR 		0.00000000 EUR	=&gt; 54.56375396 ETH
+2019-09-09 17:45:48 (INFO):	2019-04-23 11:45:00: Paper trader simulated a SELL (trailingStop 1.4967683337871864%) @ 154.92 EUR 	8440.33723833 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:47:45 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 17:47:45 (INFO):	2019-05-03 12:41:00: Paper trader simulated a BUY @ 148.85 EUR 		0.00000000 EUR	=&gt; 56.61858738 ETH
+2019-09-09 17:47:45 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 17:47:45 (INFO):	2019-05-03 13:36:00: Paper trader simulated a SELL @ 149.11 EUR 	8429.73396788 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:48:24 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 17:48:24 (INFO):	2019-05-06 19:46:00: Paper trader simulated a BUY @ 154.94 EUR 		0.00000000 EUR	=&gt; 54.32483133 ETH
+2019-09-09 17:48:26 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 17:48:26 (INFO):	2019-05-06 23:26:00: Paper trader simulated a SELL @ 154.50 EUR 	8380.59666082 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:48:28 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 17:48:28 (INFO):	2019-05-07 04:06:00: Paper trader simulated a BUY @ 159.37 EUR 		0.00000000 EUR	=&gt; 52.50690698 ETH
+2019-09-09 17:48:30 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 17:48:30 (INFO):	2019-05-07 08:56:00: Paper trader simulated a SELL @ 157.20 EUR 	8241.70464859 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:49:19 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 17:49:19 (INFO):	2019-05-11 13:26:00: Paper trader simulated a BUY @ 169.41 EUR 		0.00000000 EUR	=&gt; 48.57648362 ETH
+2019-09-09 17:49:20 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 17:49:20 (INFO):	2019-05-11 15:36:00: Paper trader simulated a SELL @ 167.37 EUR 	8118.05069438 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:49:21 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 17:49:21 (INFO):	2019-05-11 16:36:00: Paper trader simulated a BUY @ 167.53 EUR 		0.00000000 EUR	=&gt; 48.38460943 ETH
+2019-09-09 17:49:21 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 17:49:21 (INFO):	2019-05-11 17:36:00: Paper trader simulated a SELL @ 170.00 EUR 	8213.04552769 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:49:22 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 17:49:22 (INFO):	2019-05-11 18:41:00: Paper trader simulated a BUY @ 168.85 EUR 		0.00000000 EUR	=&gt; 48.56811346 ETH
+2019-09-09 17:49:23 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 17:49:23 (INFO):	2019-05-11 19:41:00: Paper trader simulated a SELL @ 172.21 EUR 	8351.36894671 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:49:23 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 17:49:23 (INFO):	2019-05-11 21:26:00: Paper trader simulated a BUY @ 172.50 EUR 		0.00000000 EUR	=&gt; 48.34111242 ETH
+2019-09-09 17:49:24 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 17:49:24 (INFO):	2019-05-11 22:26:00: Paper trader simulated a SELL @ 173.87 EUR 	8392.46161264 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:49:25 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 17:49:25 (INFO):	2019-05-12 01:01:00: Paper trader simulated a BUY @ 177.64 EUR 		0.00000000 EUR	=&gt; 47.17334451 ETH
+2019-09-09 17:51:41 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 17:51:41 (INFO):	2019-05-23 00:01:00: Paper trader simulated a SELL @ 217.17 EUR 	10229.26827439 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:51:59 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 17:51:59 (INFO):	2019-05-24 11:01:00: Paper trader simulated a BUY @ 224.87 EUR 		0.00000000 EUR	=&gt; 45.42146294 ETH
+2019-09-09 17:52:59 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 17:52:59 (INFO):	2019-05-29 08:01:00: Paper trader simulated a SELL @ 235.00 EUR 	10658.03272521 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:52:59 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 17:52:59 (INFO):	2019-05-29 08:05:00: Paper trader simulated a BUY @ 235.65 EUR 		0.00000000 EUR	=&gt; 45.16038903 ETH
+2019-09-09 17:53:03 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 17:53:03 (DEBUG):	Got advice to go long again - skip this double advice!
+2019-09-09 17:53:03 (INFO):	2019-05-29 16:09:00: Paper trader simulated a SELL (trailingStop 3.902049652844937%) @ 245.34 EUR 	11063.03036985 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:53:09 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 17:53:09 (INFO):	2019-05-30 06:01:00: Paper trader simulated a BUY @ 256.49 EUR 		0.00000000 EUR	=&gt; 43.06770565 ETH
+2019-09-09 17:53:18 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 17:53:18 (INFO):	2019-05-30 23:01:00: Paper trader simulated a SELL @ 237.60 EUR 	10217.53753214 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:53:18 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 17:53:18 (INFO):	2019-05-30 23:32:00: Paper trader simulated a BUY @ 217.76 EUR 		0.00000000 EUR	=&gt; 46.85071282 ETH
+2019-09-09 17:53:18 (INFO):	2019-05-30 23:38:00: Paper trader simulated a SELL (trailingStop 1.1648020065264921%) @ 222.40 EUR 	10403.96913337 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:53:32 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 17:53:32 (INFO):	2019-06-01 03:01:00: Paper trader simulated a BUY @ 245.02 EUR 		0.00000000 EUR	=&gt; 42.39802130 ETH
+2019-09-09 17:54:00 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 17:54:00 (INFO):	2019-06-03 11:01:00: Paper trader simulated a SELL @ 233.35 EUR 	9878.73790294 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:55:50 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 17:55:50 (INFO):	2019-06-12 17:12:00: Paper trader simulated a BUY @ 223.95 EUR 		0.00000000 EUR	=&gt; 44.04518774 ETH
+2019-09-09 17:55:50 (INFO):	2019-06-12 18:26:00: Paper trader simulated a SELL (trailingStop 1.4032066955030107%) @ 228.67 EUR 	10056.70536088 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:57:51 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 17:57:51 (INFO):	2019-06-23 03:01:00: Paper trader simulated a BUY @ 275.34 EUR 		0.00000000 EUR	=&gt; 36.46989287 ETH
+2019-09-09 17:58:45 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 17:58:45 (INFO):	2019-06-27 12:01:00: Paper trader simulated a SELL @ 267.01 EUR 	9723.21935607 EUR &lt;= 0.00000000 ETH
+2019-09-09 17:59:15 (DEBUG):	BUY with 60M main strategy...
+2019-09-09 17:59:15 (INFO):	2019-06-30 01:01:00: Paper trader simulated a BUY @ 276.24 EUR 		0.00000000 EUR	=&gt; 35.14565061 ETH
+2019-09-09 17:59:23 (DEBUG):	SELL with 60M main strategy...
+2019-09-09 17:59:23 (INFO):	2019-06-30 16:01:00: Paper trader simulated a SELL @ 259.75 EUR 	9115.38912182 EUR &lt;= 0.00000000 ETH
+2019-09-09 18:00:49 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 18:00:49 (INFO):	2019-07-07 22:51:00: Paper trader simulated a BUY @ 272.70 EUR 		0.00000000 EUR	=&gt; 33.37629643 ETH
+2019-09-09 18:00:49 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 18:00:49 (INFO):	2019-07-07 23:41:00: Paper trader simulated a SELL @ 273.50 EUR 	9114.72444799 EUR &lt;= 0.00000000 ETH
+
+2019-09-09 18:08:45 (INFO):	*** T5 optimizer: Changing RSI thresholds to 63 / 34
+
+2019-09-09 18:09:02 (DEBUG):	BUY with 5M main strategy...
+2019-09-09 18:09:02 (INFO):	2019-08-18 17:06:00: Paper trader simulated a BUY @ 175.51 EUR 		0.00000000 EUR	=&gt; 51.85489351 ETH
+2019-09-09 18:09:02 (DEBUG):	SELL with 5M main strategy...
+2019-09-09 18:09:02 (INFO):	2019-08-18 17:41:00: Paper trader simulated a SELL @ 175.29 EUR 	9076.00981694 EUR &lt;= 0.00000000 ETH
+2019-09-09 18:10:00 (DEBUG):	BUY with multimarket-xt strategy...
+2019-09-09 18:10:00 (INFO):	2019-08-23 15:40:00: Paper trader simulated a BUY @ 175.55 EUR 		0.00000000 EUR	=&gt; 51.62287554 ETH
+2019-09-09 18:10:01 (INFO):	2019-08-23 17:30:00: Paper trader simulated a SELL (trailingStop 1.4415554813806533%) @ 174.75 EUR 	9007.56585436 EUR &lt;= 0.00000000 ETH
+2019-09-09 18:12:04 (INFO):	
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) REPORT:
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) entry date (UTC)  	exit date (UTC)  	exposed duration	P&amp;L 	profit
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2017-12-31 22:01	2018-01-16 01:01	15 days         	596.38	59.73
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 01:48	2018-01-16 02:20	32 minutes      	-15.15	-0.95
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 08:17	2018-01-16 08:28	11 minutes      	-44.61	-2.83
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 08:48	2018-01-16 08:54	6 minutes       	-57.07	-3.73
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 09:27	2018-01-16 09:32	5 minutes       	19.95	1.36
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 09:54	2018-01-16 10:00	6 minutes       	27.65	1.86
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 10:03	2018-01-16 10:16	13 minutes      	14.54	0.96
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 10:22	2018-01-16 10:42	20 minutes      	85.33	5.60
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 12:27	2018-01-16 12:39	12 minutes      	-46.85	-2.92
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 14:07	2018-01-16 14:11	4 minutes       	-41.11	-2.64
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 14:14	2018-01-16 14:21	7 minutes       	22.65	1.50
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 15:43	2018-01-16 16:07	24 minutes      	-12.78	-0.83
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 18:10	2018-01-16 18:14	4 minutes       	31.35	2.06
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 18:25	2018-01-16 18:30	5 minutes       	-6.56	-0.42
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 18:52	2018-01-16 19:15	23 minutes      	60.37	3.92
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 21:07	2018-01-16 21:15	8 minutes       	-24.91	-1.56
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 21:42	2018-01-16 21:53	11 minutes      	25.95	1.65
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 21:59	2018-01-16 22:04	5 minutes       	-51.34	-3.22
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 22:22	2018-01-16 22:29	7 minutes       	-48.50	-3.15
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 22:35	2018-01-16 22:42	7 minutes       	108.64	7.29
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 22:47	2018-01-16 23:02	15 minutes      	33.95	2.13
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 23:09	2018-01-16 23:31	22 minutes      	109.62	6.74
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-16 23:52	2018-01-17 00:11	19 minutes      	42.85	2.47
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 00:17	2018-01-17 00:23	6 minutes       	-28.03	-1.58
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 00:43	2018-01-17 00:46	3 minutes       	-17.22	-0.99
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 01:05	2018-01-17 01:12	7 minutes       	18.41	1.07
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 01:37	2018-01-17 01:49	12 minutes      	-39.96	-2.30
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 03:32	2018-01-17 04:01	29 minutes      	26.73	1.57
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 04:32	2018-01-17 04:52	20 minutes      	25.66	1.49
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 08:33	2018-01-17 08:48	15 minutes      	-14.10	-0.81
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 10:29	2018-01-17 10:46	17 minutes      	35.41	2.05
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 11:05	2018-01-17 11:10	5 minutes       	12.70	0.72
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 11:12	2018-01-17 11:20	8 minutes       	23.09	1.30
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 12:05	2018-01-17 12:18	13 minutes      	26.38	1.47
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 14:12	2018-01-17 14:16	4 minutes       	-37.18	-2.05
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 14:43	2018-01-17 14:48	5 minutes       	-12.25	-0.69
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 15:02	2018-01-17 15:11	9 minutes       	26.95	1.53
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 15:37	2018-01-17 15:45	8 minutes       	43.83	2.46
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 16:08	2018-01-17 16:16	8 minutes       	12.45	0.68
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 16:23	2018-01-17 16:30	7 minutes       	40.22	2.19
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 20:04	2018-01-17 20:12	8 minutes       	54.51	2.91
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 21:07	2018-01-17 21:48	41 minutes      	122.40	6.36
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 22:27	2018-01-17 22:39	12 minutes      	-47.68	-2.33
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 22:47	2018-01-17 22:54	7 minutes       	-11.89	-0.60
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 23:15	2018-01-17 23:23	8 minutes       	83.48	4.22
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-17 23:37	2018-01-17 23:43	6 minutes       	15.83	0.77
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-18 04:02	2018-01-18 04:11	9 minutes       	21.44	1.04
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-18 05:23	2018-01-18 05:32	9 minutes       	35.62	1.70
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-18 16:37	2018-01-18 17:24	an hour         	-22.32	-1.05
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-18 22:17	2018-01-18 22:50	33 minutes      	41.44	1.98
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-19 03:22	2018-01-19 04:34	an hour         	-13.76	-0.64
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-19 04:44	2018-01-19 05:45	an hour         	-16.84	-0.80
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-19 08:08	2018-01-19 08:45	37 minutes      	50.15	2.39
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-20 05:10	2018-01-20 06:41	2 hours         	-10.86	-0.51
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-22 13:33	2018-01-22 13:42	9 minutes       	-30.63	-1.44
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-22 13:52	2018-01-22 14:06	14 minutes      	22.65	1.08
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-22 16:02	2018-01-22 16:37	35 minutes      	26.81	1.27
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-22 22:00	2018-01-22 22:14	14 minutes      	31.22	1.46
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-23 16:28	2018-01-23 17:19	an hour         	-24.92	-1.15
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-26 08:39	2018-01-26 09:07	28 minutes      	-8.36	-0.39
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-28 05:01	2018-01-30 19:01	3 days          	-150.77	-7.08
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-01-31 01:13	2018-01-31 01:18	5 minutes       	-11.09	-0.56
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-01 16:42	2018-02-01 16:48	6 minutes       	11.19	0.57
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-01 20:24	2018-02-01 20:27	3 minutes       	15.78	0.80
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-01 20:29	2018-02-01 20:33	4 minutes       	-37.93	-1.91
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-01 21:19	2018-02-01 21:45	26 minutes      	18.60	0.96
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-02 09:27	2018-02-02 09:32	5 minutes       	-31.45	-1.61
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-03 15:41	2018-02-03 17:16	2 hours         	14.53	0.76
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-03 18:16	2018-02-03 19:11	an hour         	19.47	1.01
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-03 19:13	2018-02-03 20:37	an hour         	-5.07	-0.26
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-05 12:03	2018-02-05 12:12	9 minutes       	-29.49	-1.52
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-05 18:37	2018-02-05 18:43	6 minutes       	-26.25	-1.37
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-05 20:04	2018-02-05 20:09	5 minutes       	57.16	3.04
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-05 20:29	2018-02-05 20:39	10 minutes      	85.84	4.44
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-05 20:43	2018-02-05 20:51	8 minutes       	38.61	1.91
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-05 21:07	2018-02-05 21:12	5 minutes       	-41.56	-2.02
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-05 21:23	2018-02-05 21:32	9 minutes       	57.93	2.88
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-05 23:05	2018-02-05 23:17	12 minutes      	16.27	0.79
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-06 05:38	2018-02-06 05:42	4 minutes       	54.23	2.61
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-06 05:42	2018-02-06 05:46	4 minutes       	-51.69	-2.43
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-06 09:12	2018-02-06 09:18	6 minutes       	-18.29	-0.88
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-06 09:25	2018-02-06 09:30	5 minutes       	37.85	1.84
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-06 09:33	2018-02-06 09:38	5 minutes       	33.92	1.63
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-06 09:54	2018-02-06 09:57	3 minutes       	-42.75	-2.02
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-06 12:37	2018-02-06 12:42	5 minutes       	-43.85	-2.12
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-06 13:40	2018-02-06 13:55	15 minutes      	82.70	4.09
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-06 13:58	2018-02-06 14:04	6 minutes       	17.59	0.84
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-06 14:50	2018-02-06 14:53	3 minutes       	12.85	0.61
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-06 15:15	2018-02-06 15:28	13 minutes      	87.41	4.11
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-06 15:53	2018-02-06 15:57	4 minutes       	-16.32	-0.74
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-06 17:52	2018-02-06 18:03	11 minutes      	39.70	1.81
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-06 20:01	2018-02-18 07:01	11 days         	517.46	23.22
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-02-18 07:03	2018-02-19 23:06	2 days          	-3.60	-0.13
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-03-10 02:46	2018-03-10 04:46	2 hours         	-2.36	-0.09
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-03-20 20:01	2018-03-22 12:01	2 days          	-147.74	-5.42
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-04-03 05:01	2018-04-04 10:01	a day           	-33.48	-1.30
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-04-07 04:01	2018-04-12 17:36	6 days          	520.11	20.49
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-04-13 02:11	2018-04-13 02:31	20 minutes      	14.55	0.48
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-04-13 09:46	2018-04-13 11:26	2 hours         	22.12	0.72
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-04-13 12:21	2018-04-13 13:01	40 minutes      	38.99	1.27
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-04-15 11:07	2018-04-15 13:46	3 hours         	44.15	1.42
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-04-15 14:01	2018-04-25 05:01	10 days         	709.13	22.47
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-04-26 23:01	2018-05-06 09:01	9 days          	692.08	17.93
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-05-10 05:01	2018-05-10 20:01	15 hours        	-184.58	-4.06
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-05-13 09:29	2018-05-13 10:37	an hour         	-22.36	-0.51
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-05-13 17:46	2018-05-13 19:01	an hour         	49.51	1.15
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-05-13 20:21	2018-05-13 20:51	30 minutes      	30.02	0.69
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-05-14 13:53	2018-05-14 13:59	6 minutes       	19.35	0.44
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-05-16 10:17	2018-05-16 13:19	3 hours         	-53.43	-1.21
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-05-18 07:25	2018-05-18 10:17	3 hours         	37.32	0.86
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-05-24 12:49	2018-05-24 12:59	10 minutes      	56.61	1.29
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-06-03 07:01	2018-06-04 12:01	a day           	-116.94	-2.64
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-06-13 16:33	2018-06-13 16:36	3 minutes       	28.59	0.66
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-06-14 21:36	2018-06-15 00:16	3 hours         	4.48	0.10
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-06-15 00:56	2018-06-15 03:36	3 hours         	-37.84	-0.88
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-06-16 16:47	2018-06-16 17:36	an hour         	-57.50	-1.34
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-06-18 16:28	2018-06-18 16:49	21 minutes      	56.16	1.33
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-06-19 11:01	2018-06-19 13:21	2 hours         	113.73	2.67
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-06-19 14:01	2018-06-19 20:06	6 hours         	35.99	0.82
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-06-24 16:44	2018-06-24 16:50	6 minutes       	24.61	0.56
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-06-25 14:28	2018-06-25 14:38	10 minutes      	-65.14	-1.47
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-06-30 07:06	2018-06-30 09:46	3 hours         	34.33	0.79
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-07-02 16:46	2018-07-02 19:01	2 hours         	23.90	0.55
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-07-17 17:39	2018-07-17 17:47	8 minutes       	80.02	1.82
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-07-17 18:04	2018-07-17 18:30	26 minutes      	-40.14	-0.90
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-07-17 19:56	2018-07-17 21:41	2 hours         	15.71	0.36
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-08-15 16:01	2018-08-18 16:01	3 days          	-153.39	-3.47
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-09-13 01:01	2018-09-17 16:01	5 days          	332.94	7.80
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-09-20 23:01	2018-09-23 07:46	2 days          	356.89	7.77
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-09-27 23:01	2018-09-28 00:11	an hour         	43.01	0.87
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-09-29 10:31	2018-09-29 11:41	an hour         	59.07	1.19
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-10-15 07:26	2018-10-15 10:16	3 hours         	-23.75	-0.47
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-11-04 19:41	2018-11-04 21:36	2 hours         	-34.66	-0.69
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-11-14 16:34	2018-11-14 16:42	8 minutes       	77.66	1.57
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-11-27 23:01	2018-12-03 03:01	5 days          	18.56	0.37
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-12-17 13:01	2018-12-20 17:06	3 days          	1407.59	27.95
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-12-20 18:11	2018-12-20 22:06	4 hours         	12.19	0.19
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-12-23 00:01	2018-12-25 04:01	2 days          	385.45	5.99
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-12-28 15:38	2018-12-28 15:48	10 minutes      	37.35	0.55
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2018-12-28 17:01	2018-12-31 20:01	3 days          	-124.11	-1.81
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-01-01 21:01	2019-01-06 02:01	4 days          	489.58	7.30
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-01-06 17:18	2019-01-06 17:46	28 minutes      	-76.18	-1.06
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-01-14 15:37	2019-01-14 15:48	11 minutes      	120.58	1.70
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-02-08 19:06	2019-02-09 00:01	5 hours         	-2.52	-0.03
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-02-17 22:02	2019-02-24 15:01	7 days          	562.94	7.83
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-03-05 14:56	2019-03-05 16:46	2 hours         	172.91	2.23
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-03-05 18:31	2019-03-05 20:01	2 hours         	13.74	0.17
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-04-02 04:34	2019-04-02 04:42	8 minutes       	130.52	1.65
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-04-02 04:52	2019-04-02 04:56	4 minutes       	76.41	0.95
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-04-02 05:18	2019-04-02 05:27	9 minutes       	-56.80	-0.70
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-04-02 06:16	2019-04-02 08:26	2 hours         	114.43	1.43
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-04-02 22:01	2019-04-11 04:01	8 days          	394.58	4.86
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-04-23 04:25	2019-04-23 09:45	5 hours         	-65.06	-0.76
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-05-03 10:41	2019-05-03 11:36	an hour         	2.06	0.02
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-05-06 17:46	2019-05-06 21:26	4 hours         	-36.49	-0.43
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-05-07 02:06	2019-05-07 06:56	5 hours         	-126.32	-1.51
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-05-11 11:26	2019-05-11 13:36	2 hours         	-111.29	-1.35
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-05-11 14:36	2019-05-11 15:36	an hour         	107.17	1.32
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-05-11 16:41	2019-05-11 17:41	an hour         	150.64	1.84
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-05-11 19:26	2019-05-11 20:26	an hour         	53.62	0.64
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-05-11 23:01	2019-05-22 22:01	11 days         	1849.40	22.07
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-05-24 09:01	2019-05-29 06:01	5 days          	444.11	4.35
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-05-29 06:05	2019-05-29 14:09	8 hours         	420.98	3.96
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-05-30 04:01	2019-05-30 21:01	17 hours        	-828.90	-7.50
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-05-30 21:32	2019-05-30 21:38	6 minutes       	201.76	1.98
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-06-01 01:01	2019-06-03 09:01	2 days          	-509.63	-4.91
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-06-12 15:12	2019-06-12 16:26	an hour         	192.79	1.95
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-06-23 01:01	2019-06-27 10:01	4 days          	-318.40	-3.17
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-06-29 23:01	2019-06-30 14:01	15 hours        	-593.25	-6.11
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-07-07 20:51	2019-07-07 21:41	an hour         	13.01	0.14
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-08-18 15:06	2019-08-18 15:41	35 minutes      	-25.04	-0.28
+2019-09-09 18:12:04 (INFO):	(ROUNDTRIP) 2019-08-23 13:40	2019-08-23 15:30	2 hours         	-54.83	-0.61
+2019-09-09 18:12:04 (INFO):	
+2019-09-09 18:12:04 (INFO):	(PROFIT REPORT) start time:			 2017-12-06 22:00:00
+2019-09-09 18:12:04 (INFO):	(PROFIT REPORT) end time:			 2019-09-02 22:01:00
+2019-09-09 18:12:04 (INFO):	(PROFIT REPORT) timespan:			 2 years
+2019-09-09 18:12:04 (INFO):	(PROFIT REPORT) exposure:			 0.20747899444554413
+2019-09-09 18:12:04 (INFO):	
+2019-09-09 18:12:04 (INFO):	(PROFIT REPORT) start price:			 366.53 EUR
+2019-09-09 18:12:04 (INFO):	(PROFIT REPORT) end price:			 163.6 EUR
+2019-09-09 18:12:04 (INFO):	(PROFIT REPORT) Market:				 </span><span style="color:red;">-55.36518157%</span><span style="color:white;">
+2019-09-09 18:12:04 (INFO):	
+2019-09-09 18:12:04 (INFO):	(PROFIT REPORT) amount of trades:		 344
+2019-09-09 18:12:04 (INFO):	(PROFIT REPORT) original balance:		 1000.00000000 EUR
+2019-09-09 18:12:04 (INFO):	(PROFIT REPORT) current balance:		 9007.56585436 EUR
+2019-09-09 18:12:04 (INFO):	(PROFIT REPORT) profit:				 8007.56585436 EUR (</span><span style="color:lime;">800.75658544%</span><span style="color:white;">)
+2019-09-09 18:12:04 (INFO):	(PROFIT REPORT) alpha:				 856.1217670036754%
+2019-09-09 18:12:04 (INFO):	(PROFIT REPORT) simulated yearly profit:	 4605.827044204849 EUR (460.58270442048496%)
+2019-09-09 18:12:04 (INFO):	(PROFIT REPORT) sharpe ratio:			 69.62744931371827
+2019-09-09 18:12:04 (INFO):	(PROFIT REPORT) expected downside:		 -2.3308953343901218
+2019-09-09 18:12:04 (INFO):	(PROFIT REPORT) </span><span style="color:yellow;">Ole, Ole, Ole, dicke (• )( •) Kartoffelsalat, Lambo time :-)</span><span style="color:white;">
+2019-09-09 18:12:04 (INFO):	(PROFIT REPORT) ratio roundtrips:		 61.0465%
+</span>
+</pre>
+</body>
+</html>

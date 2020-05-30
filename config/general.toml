@@ -1,0 +1,10 @@
+debug = true
+
+# what database should Gekko use?
+adapter = 'postgresql'
+
+[watch]
+exchange = 'Poloniex'
+currency = 'USDT'
+asset = 'BTC'
+
